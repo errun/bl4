@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>构建列表 - BL4Builds.net</title>
+    <meta name="description" content="浏览所有 Borderlands 4 技能构建，按角色和难度筛选最适合你的构建方案。">
+    <meta name="keywords" content="Borderlands 4, 构建列表, 技能构建, 角色构建">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="构建列表 - BL4Builds.net">
+    <meta property="og:description" content="浏览所有 Borderlands 4 技能构建，按角色和难度筛选最适合你的构建方案。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bl4builds.net/builds/">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="/" class="brand-link">BL4Builds.net</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/" class="nav-link">首页</a>
+                    <a href="/builds/" class="nav-link active">构建指南</a>
+                    <a href="/about.html" class="nav-link">关于</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">首页</a> > <span>构建指南</span>
+        </div>
+    </div>
+
+    <!-- 主要内容 -->
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <h1>构建指南</h1>
+                <p>发现适合你游戏风格的完美构建</p>
+            </div>
+
+            <!-- 搜索和筛选 -->
+            <div class="filters">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="搜索构建名称或描述...">
+                    <button type="button" id="search-btn">搜索</button>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="zane">Zane</button>
+                    <button class="filter-btn" data-filter="moze">Moze</button>
+                    <button class="filter-btn" data-filter="amara">Amara</button>
+                    <button class="filter-btn" data-filter="fl4k">FL4K</button>
+                    <button class="filter-btn" data-filter="beginner">初级</button>
+                    <button class="filter-btn" data-filter="intermediate">中级</button>
+                    <button class="filter-btn" data-filter="advanced">高级</button>
+                </div>
+            </div>
+
+            <!-- 构建网格 -->
+            <div class="builds-grid" id="builds-grid">
+                <!-- 构建卡片将通过JavaScript动态生成，或者静态列出 -->
+
+                <!-- Zane 构建 -->
+                <div class="build-card" data-character="zane" data-difficulty="advanced">
+                    <div class="build-image">
+                        <div class="character-badge">Zane</div>
+                    </div>
+                    <div class="build-content">
+                        <h3 class="build-title">终局电击DPS构建</h3>
+                        <p class="build-description">专为终局内容设计的高伤害电击构建，适合单人和团队作战。</p>
+                        <div class="build-meta">
+                            <span class="difficulty advanced">高级</span>
+                            <span class="patch">v1.0</span>
+                        </div>
+                        <a href="zane-endgame-shock-dps.html" class="build-link">查看详情</a>
+                    </div>
+                </div>
+
+                <!-- Moze 构建 -->
+                <div class="build-card" data-character="moze" data-difficulty="intermediate">
+                    <div class="build-image">
+                        <div class="character-badge">Moze</div>
+                    </div>
+                    <div class="build-content">
+                        <h3 class="build-title">单人Boss击杀构建</h3>
+                        <p class="build-description">专门针对Boss战设计，爆发伤害极高，适合单人挑战。</p>
+                        <div class="build-meta">
+                            <span class="difficulty intermediate">中级</span>
+                            <span class="patch">v1.0</span>
+                        </div>
+                        <a href="moze-solo-boss.html" class="build-link">查看详情</a>
+                    </div>
+                </div>
+
+                <!-- Amara 构建 -->
+                <div class="build-card" data-character="amara" data-difficulty="beginner">
+                    <div class="build-image">
+                        <div class="character-badge">Amara</div>
+                    </div>
+                    <div class="build-content">
+                        <h3 class="build-title">新手入门构建</h3>
+                        <p class="build-description">完美的新手起步构建，易于理解和执行，成长性强。</p>
+                        <div class="build-meta">
+                            <span class="difficulty beginner">初级</span>
+                            <span class="patch">v1.0</span>
+                        </div>
+                        <a href="amara-starter.html" class="build-link">查看详情</a>
+                    </div>
+                </div>
+
+                <!-- FL4K 构建 -->
+                <div class="build-card" data-character="fl4k" data-difficulty="intermediate">
+                    <div class="build-image">
+                        <div class="character-badge">FL4K</div>
+                    </div>
+                    <div class="build-content">
+                        <h3 class="build-title">宠物大师构建</h3>
+                        <p class="build-description">充分发挥宠物系统的强力构建，适合喜欢策略玩法的玩家。</p>
+                        <div class="build-meta">
+                            <span class="difficulty intermediate">中级</span>
+                            <span class="patch">v1.0</span>
+                        </div>
+                        <a href="fl4k-pet-master.html" class="build-link">查看详情</a>
+                    </div>
+                </div>
+
+                <!-- 通用构建 -->
+                <div class="build-card" data-character="universal" data-difficulty="beginner">
+                    <div class="build-image">
+                        <div class="character-badge">通用</div>
+                    </div>
+                    <div class="build-content">
+                        <h3 class="build-title">通用升级构建</h3>
+                        <p class="build-description">适合所有角色的升级构建，帮助新玩家快速适应游戏。</p>
+                        <div class="build-meta">
+                            <span class="difficulty beginner">初级</span>
+                            <span class="patch">v1.0</span>
+                        </div>
+                        <a href="universal-leveling.html" class="build-link">查看详情</a>
+                    </div>
+                </div>
+
+                <!-- 团队构建 -->
+                <div class="build-card" data-character="team" data-difficulty="advanced">
+                    <div class="build-image">
+                        <div class="character-badge">团队</div>
+                    </div>
+                    <div class="build-content">
+                        <h3 class="build-title">团队辅助构建</h3>
+                        <p class="build-description">专为团队合作设计的辅助构建，提供强力的团队增益效果。</p>
+                        <div class="build-meta">
+                            <span class="difficulty advanced">高级</span>
+                            <span class="patch">v1.0</span>
+                        </div>
+                        <a href="team-support.html" class="build-link">查看详情</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 无结果提示 -->
+            <div class="no-results" id="no-results" style="display: none;">
+                <h3>未找到匹配的构建</h3>
+                <p>请尝试调整搜索条件或筛选选项</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BL4Builds.net</h4>
+                    <p>Borderlands 4 玩家社区与工具站</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>邮箱：contact@bl4builds.net</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BL4Builds.net. 本站为粉丝站点，与 Gearbox Software 无关。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/site.js"></script>
+</body>
+</html>

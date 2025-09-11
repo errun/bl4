@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[构建名称] - BL4Builds.net</title>
+    <meta name="description" content="[构建描述]">
+    <meta name="keywords" content="Borderlands 4, [角色名], 构建, 技能, 装备">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="[构建名称] - BL4Builds.net">
+    <meta property="og:description" content="[构建描述]">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bl4builds.net/builds/[构建链接].html">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="/" class="brand-link">BL4Builds.net</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/" class="nav-link">首页</a>
+                    <a href="/builds/" class="nav-link">构建指南</a>
+                    <a href="/about.html" class="nav-link">关于</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">首页</a> > <a href="/builds/">构建指南</a> > <span>[构建名称]</span>
+        </div>
+    </div>
+
+    <!-- 构建详情 -->
+    <main class="main">
+        <div class="container">
+            <!-- 构建头部 -->
+            <div class="build-header">
+                <div class="build-info">
+                    <div class="build-badges">
+                        <span class="character-badge">[角色名]</span>
+                        <span class="difficulty [难度级别]">[难度]</span>
+                        <span class="patch">v1.0</span>
+                    </div>
+                    <h1 class="build-title">[构建名称]</h1>
+                    <p class="build-subtitle">[构建简介]</p>
+                </div>
+                <div class="build-actions">
+                    <button class="btn btn-primary" id="copy-build">复制构建链接</button>
+                    <button class="btn btn-secondary" id="share-build">分享构建</button>
+                </div>
+            </div>
+
+            <!-- TL;DR 区域 -->
+            <section class="build-section">
+                <h2>TL;DR - 快速概览</h2>
+                <div class="tldr-grid">
+                    <div class="tldr-item">
+                        <h4>核心策略</h4>
+                        <p>[核心策略描述]</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>主要装备</h4>
+                        <p>[主要装备列表]</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>适用场景</h4>
+                        <p>[适用场景描述]</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>难度评级</h4>
+                        <p>[难度说明]</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 技能加点 -->
+            <section class="build-section">
+                <h2>技能加点</h2>
+                <div class="skills-container">
+                    <div class="skill-tree">
+                        <h3>[技能树名称 1]</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">[技能名称]</span>
+                                <span class="skill-points">[点数]/[最大点数]</span>
+                                <p class="skill-description">[技能描述]</p>
+                            </div>
+                            <!-- 更多技能项目 -->
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>[技能树名称 2]</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">[技能名称]</span>
+                                <span class="skill-points">[点数]/[最大点数]</span>
+                                <p class="skill-description">[技能描述]</p>
+                            </div>
+                            <!-- 更多技能项目 -->
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>[技能树名称 3]</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">[技能名称]</span>
+                                <span class="skill-points">[点数]/[最大点数]</span>
+                                <p class="skill-description">[技能描述]</p>
+                            </div>
+                            <!-- 更多技能项目 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 装备推荐 -->
+            <section class="build-section">
+                <h2>装备推荐</h2>
+                <div class="equipment-grid">
+                    <div class="equipment-category">
+                        <h3>武器</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>[武器名称]</h4>
+                                <p class="equipment-type">[武器类型] - [稀有度]</p>
+                                <p class="equipment-description">[武器描述和获取方式]</p>
+                            </div>
+                            <!-- 更多武器 -->
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>护盾</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>[护盾名称]</h4>
+                                <p class="equipment-type">[护盾类型] - [稀有度]</p>
+                                <p class="equipment-description">[护盾描述和获取方式]</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>神器/职业模组</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>[装备名称]</h4>
+                                <p class="equipment-type">[装备类型] - [稀有度]</p>
+                                <p class="equipment-description">[装备描述和获取方式]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 游戏策略 -->
+            <section class="build-section">
+                <h2>游戏策略</h2>
+                <div class="strategy-content">
+                    <div class="strategy-section">
+                        <h3>战斗循环</h3>
+                        <ol class="strategy-steps">
+                            <li>[步骤 1 描述]</li>
+                            <li>[步骤 2 描述]</li>
+                            <li>[步骤 3 描述]</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>优势与劣势</h3>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>优势</h4>
+                                <ul>
+                                    <li>[优势 1]</li>
+                                    <li>[优势 2]</li>
+                                    <li>[优势 3]</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>劣势</h4>
+                                <ul>
+                                    <li>[劣势 1]</li>
+                                    <li>[劣势 2]</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>升级路径</h3>
+                        <p>[升级建议和技能点分配顺序]</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 相关构建 -->
+            <section class="build-section">
+                <h2>相关构建</h2>
+                <div class="related-builds">
+                    <div class="build-card-small">
+                        <h4>[相关构建 1]</h4>
+                        <p>[简短描述]</p>
+                        <a href="[链接]">查看详情</a>
+                    </div>
+                    <div class="build-card-small">
+                        <h4>[相关构建 2]</h4>
+                        <p>[简短描述]</p>
+                        <a href="[链接]">查看详情</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 导航按钮 -->
+            <div class="build-navigation">
+                <a href="/builds/" class="btn btn-secondary">返回构建列表</a>
+                <a href="/" class="btn btn-primary">返回首页</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BL4Builds.net</h4>
+                    <p>Borderlands 4 玩家社区与工具站</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/builds/">构建指南</a></li>
+                        <li><a href="/about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>邮箱：contact@bl4builds.net</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BL4Builds.net. 本站为粉丝站点，与 Gearbox Software 无关。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/site.js"></script>
+</body>
+</html>

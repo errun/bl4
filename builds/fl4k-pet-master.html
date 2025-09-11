@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FL4K宠物大师构建 - BL4Builds.net</title>
+    <meta name="description" content="充分发挥FL4K宠物系统的强力构建，适合喜欢策略玩法和宠物协作的玩家。">
+    <meta name="keywords" content="Borderlands 4, FL4K, 宠物, 大师, 构建, 策略">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="FL4K宠物大师构建 - BL4Builds.net">
+    <meta property="og:description" content="充分发挥FL4K宠物系统的强力构建，适合喜欢策略玩法的玩家。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bl4builds.net/builds/fl4k-pet-master.html">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="/" class="brand-link">BL4Builds.net</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/" class="nav-link">首页</a>
+                    <a href="/builds/" class="nav-link">构建指南</a>
+                    <a href="/about.html" class="nav-link">关于</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">首页</a> > <a href="/builds/">构建指南</a> > <span>FL4K宠物大师构建</span>
+        </div>
+    </div>
+
+    <!-- 构建详情 -->
+    <main class="main">
+        <div class="container">
+            <!-- 构建头部 -->
+            <div class="build-header">
+                <div class="build-info">
+                    <div class="build-badges">
+                        <span class="character-badge">FL4K</span>
+                        <span class="difficulty intermediate">中级</span>
+                        <span class="patch">v1.0</span>
+                    </div>
+                    <h1 class="build-title">宠物大师构建</h1>
+                    <p class="build-subtitle">充分发挥宠物系统的强力构建，通过宠物协作和增益效果实现独特的战斗体验</p>
+                </div>
+                <div class="build-actions">
+                    <button class="btn btn-primary" id="copy-build">复制构建链接</button>
+                    <button class="btn btn-secondary" id="share-build">分享构建</button>
+                </div>
+            </div>
+
+            <!-- TL;DR 区域 -->
+            <section class="build-section">
+                <h2>TL;DR - 快速概览</h2>
+                <div class="tldr-grid">
+                    <div class="tldr-item">
+                        <h4>核心策略</h4>
+                        <p>依靠强化宠物进行主要输出，玩家提供支援和控制</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>主要装备</h4>
+                        <p>宠物增强武器、支援护盾、宠物强化模组、协作神器</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>适用场景</h4>
+                        <p>探索任务、中等难度副本、团队支援、休闲游戏</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>难度评级</h4>
+                        <p>需要理解宠物AI和协作机制，适合喜欢策略的玩家</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 技能加点 -->
+            <section class="build-section">
+                <h2>技能加点</h2>
+                <div class="skills-container">
+                    <div class="skill-tree">
+                        <h3>宠物强化树</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">宠物伤害增强</span>
+                                <span class="skill-points">5/5</span>
+                                <p class="skill-description">大幅提升宠物的攻击力和技能伤害</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">宠物生命强化</span>
+                                <span class="skill-points">5/5</span>
+                                <p class="skill-description">增加宠物最大生命值和护甲，提高生存能力</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">野兽之王</span>
+                                <span class="skill-points">1/1</span>
+                                <p class="skill-description">终极技能：召唤强化宠物，获得特殊能力</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>协作增益树</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">共享增益</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">玩家和宠物共享部分增益效果</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">协同攻击</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">玩家攻击时宠物有几率进行协同攻击</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">治疗链接</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">玩家或宠物回复生命时，另一方也会获得治疗</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>狩猎专精树</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">追踪能力</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">提高对敌人弱点的识别和攻击精度</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">狩猎本能</span>
+                                <span class="skill-points">2/5</span>
+                                <p class="skill-description">击杀敌人后获得短暂的伤害和移动速度加成</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 装备推荐 -->
+            <section class="build-section">
+                <h2>装备推荐</h2>
+                <div class="equipment-grid">
+                    <div class="equipment-category">
+                        <h3>武器</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>驯兽师步枪</h4>
+                                <p class="equipment-type">突击步枪 - 史诗</p>
+                                <p class="equipment-description">击中敌人时为宠物提供伤害加成。掉落：野生动物区域</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>协作手枪</h4>
+                                <p class="equipment-type">手枪 - 稀有</p>
+                                <p class="equipment-description">射击时有几率触发宠物特殊攻击。掉落：宠物商人</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>护盾</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>守护者护盾</h4>
+                                <p class="equipment-type">护盾 - 史诗</p>
+                                <p class="equipment-description">护盾破碎时为宠物提供临时无敌。掉落：守护试炼</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>职业模组/神器</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>野兽之友职业模组</h4>
+                                <p class="equipment-type">职业模组 - 传奇</p>
+                                <p class="equipment-description">+3宠物伤害增强，+2协同攻击，宠物技能冷却-25%</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>原始纽带神器</h4>
+                                <p class="equipment-type">神器 - 史诗</p>
+                                <p class="skill-description">玩家和宠物伤害互相增强，最大叠加5层</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 游戏策略 -->
+            <section class="build-section">
+                <h2>游戏策略</h2>
+                <div class="strategy-content">
+                    <div class="strategy-section">
+                        <h3>战斗循环</h3>
+                        <ol class="strategy-steps">
+                            <li>让宠物先行接敌，吸引敌人注意力</li>
+                            <li>使用驯兽师步枪为宠物提供伤害加成</li>
+                            <li>在安全位置提供火力支援和治疗</li>
+                            <li>适时使用野兽之王强化宠物能力</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>优势与劣势</h3>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>优势</h4>
+                                <ul>
+                                    <li>独特的宠物协作玩法</li>
+                                    <li>宠物可以吸引火力</li>
+                                    <li>适合团队支援角色</li>
+                                    <li>操作相对轻松</li>
+                                    <li>观赏性强</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>劣势</h4>
+                                <ul>
+                                    <li>依赖宠物AI表现</li>
+                                    <li>单体爆发伤害有限</li>
+                                    <li>需要学习宠物管理</li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>升级路径</h3>
+                        <p>优先点满宠物强化技能，然后投资协作增益。最后补充狩猎专精技能。建议等级：35+</p>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>宠物管理技巧</h3>
+                        <ul class="tips-list">
+                            <li>🐕 <strong>宠物定位</strong>：学会控制宠物的攻击目标和位置</li>
+                            <li>💊 <strong>宠物治疗</strong>：及时为受伤的宠物提供治疗</li>
+                            <li>⚡ <strong>技能时机</strong>：在关键时刻使用宠物特殊技能</li>
+                            <li>🎯 <strong>协同配合</strong>：与宠物的攻击节奏保持同步</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 相关构建 -->
+            <section class="build-section">
+                <h2>相关构建</h2>
+                <div class="related-builds">
+                    <div class="build-card-small">
+                        <h4>FL4K狙击猎手构建</h4>
+                        <p>专注远程狙击的高精度构建</p>
+                        <a href="#" onclick="alert('构建开发中')">查看详情</a>
+                    </div>
+                    <div class="build-card-small">
+                        <h4>FL4K野性狂暴构建</h4>
+                        <p>近战和野性技能的狂暴构建</p>
+                        <a href="#" onclick="alert('构建开发中')">查看详情</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 导航按钮 -->
+            <div class="build-navigation">
+                <a href="/builds/" class="btn btn-secondary">返回构建列表</a>
+                <a href="/" class="btn btn-primary">返回首页</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BL4Builds.net</h4>
+                    <p>Borderlands 4 玩家社区与工具站</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/builds/">构建指南</a></li>
+                        <li><a href="/about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>邮箱：contact@bl4builds.net</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BL4Builds.net. 本站为粉丝站点，与 Gearbox Software 无关。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/site.js"></script>
+</body>
+</html>

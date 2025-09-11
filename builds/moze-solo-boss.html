@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moze单人Boss击杀构建 - BL4Builds.net</title>
+    <meta name="description" content="专门针对Boss战设计的Moze构建，爆发伤害极高，适合单人挑战各种终局Boss。">
+    <meta name="keywords" content="Borderlands 4, Moze, Boss, 单人, 爆发, 构建">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Moze单人Boss击杀构建 - BL4Builds.net">
+    <meta property="og:description" content="专门针对Boss战设计的Moze构建，爆发伤害极高，适合单人挑战。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bl4builds.net/builds/moze-solo-boss.html">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="/" class="brand-link">BL4Builds.net</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/" class="nav-link">首页</a>
+                    <a href="/builds/" class="nav-link">构建指南</a>
+                    <a href="/about.html" class="nav-link">关于</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">首页</a> > <a href="/builds/">构建指南</a> > <span>Moze单人Boss击杀构建</span>
+        </div>
+    </div>
+
+    <!-- 构建详情 -->
+    <main class="main">
+        <div class="container">
+            <!-- 构建头部 -->
+            <div class="build-header">
+                <div class="build-info">
+                    <div class="build-badges">
+                        <span class="character-badge">Moze</span>
+                        <span class="difficulty intermediate">中级</span>
+                        <span class="patch">v1.0</span>
+                    </div>
+                    <h1 class="build-title">单人Boss击杀构建</h1>
+                    <p class="build-subtitle">专门针对Boss战设计，通过爆炸伤害和机甲支援实现极致单体输出</p>
+                </div>
+                <div class="build-actions">
+                    <button class="btn btn-primary" id="copy-build">复制构建链接</button>
+                    <button class="btn btn-secondary" id="share-build">分享构建</button>
+                </div>
+            </div>
+
+            <!-- TL;DR 区域 -->
+            <section class="build-section">
+                <h2>TL;DR - 快速概览</h2>
+                <div class="tldr-grid">
+                    <div class="tldr-item">
+                        <h4>核心策略</h4>
+                        <p>利用爆炸伤害和机甲的火力支援，在短时间内对Boss造成巨额伤害</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>主要装备</h4>
+                        <p>火箭发射器、爆炸增幅护盾、机甲强化模组、爆炸专精神器</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>适用场景</h4>
+                        <p>单人Boss战、终局挑战、高价值目标击杀</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>难度评级</h4>
+                        <p>需要掌握机甲操作和爆炸伤害计算，适合中等经验玩家</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 技能加点 -->
+            <section class="build-section">
+                <h2>技能加点</h2>
+                <div class="skills-container">
+                    <div class="skill-tree">
+                        <h3>爆炸专精树</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">爆炸伤害增幅</span>
+                                <span class="skill-points">5/5</span>
+                                <p class="skill-description">所有爆炸伤害增加，包括武器和技能造成的爆炸</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">连锁爆炸</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">爆炸有几率引发二次爆炸，对Boss造成持续伤害</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">爆炸半径扩大</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">增加爆炸范围，确保对大型Boss的全覆盖</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>机甲操控树</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">机甲召唤</span>
+                                <span class="skill-points">1/1</span>
+                                <p class="skill-description">终极技能：召唤重型机甲提供火力支援</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">机甲武器强化</span>
+                                <span class="skill-points">5/5</span>
+                                <p class="skill-description">机甲武器伤害和射速大幅提升</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">机甲持续时间</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">延长机甲存在时间，提供更持久的火力支援</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>生存能力树</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">装甲强化</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">增加护甲值，提高对Boss攻击的抗性</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">生命回复</span>
+                                <span class="skill-points">2/5</span>
+                                <p class="skill-description">造成伤害时回复生命值，维持战斗续航</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 装备推荐 -->
+            <section class="build-section">
+                <h2>装备推荐</h2>
+                <div class="equipment-grid">
+                    <div class="equipment-category">
+                        <h3>武器</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>毁灭者火箭发射器</h4>
+                                <p class="equipment-type">火箭发射器 - 传奇</p>
+                                <p class="equipment-description">主要输出武器，巨额爆炸伤害。掉落：军火库Boss</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>榴弹发射器</h4>
+                                <p class="equipment-type">榴弹发射器 - 史诗</p>
+                                <p class="equipment-description">副武器，用于触发连锁爆炸。掉落：爆炸专家敌人</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>护盾</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>爆炸反射护盾</h4>
+                                <p class="equipment-type">护盾 - 传奇</p>
+                                <p class="equipment-description">受到攻击时反射爆炸伤害，增加总输出。掉落：爆炸试炼</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>职业模组/神器</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>爆破专家职业模组</h4>
+                                <p class="equipment-type">职业模组 - 传奇</p>
+                                <p class="equipment-description">+3爆炸伤害增幅，+2机甲武器强化，爆炸伤害+50%</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>机甲核心神器</h4>
+                                <p class="equipment-type">神器 - 史诗</p>
+                                <p class="equipment-description">机甲召唤冷却时间-30%，机甲伤害+25%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 游戏策略 -->
+            <section class="build-section">
+                <h2>游戏策略</h2>
+                <div class="strategy-content">
+                    <div class="strategy-section">
+                        <h3>战斗循环</h3>
+                        <ol class="strategy-steps">
+                            <li>战斗开始时立即召唤机甲，建立火力优势</li>
+                            <li>使用毁灭者火箭发射器对Boss进行集中轰炸</li>
+                            <li>利用榴弹发射器触发连锁爆炸，最大化伤害</li>
+                            <li>机甲消失前切换到安全位置，准备下一轮攻击</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>优势与劣势</h3>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>优势</h4>
+                                <ul>
+                                    <li>对Boss的极高单体伤害</li>
+                                    <li>机甲提供额外火力和保护</li>
+                                    <li>爆炸伤害无视护甲</li>
+                                    <li>适合快速击杀策略</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>劣势</h4>
+                                <ul>
+                                    <li>弹药消耗极大</li>
+                                    <li>对小怪清理效率一般</li>
+                                    <li>需要精确的距离控制</li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>升级路径</h3>
+                        <p>优先点满爆炸伤害增幅和机甲召唤，然后投资机甲强化技能。最后补充生存技能。建议等级：50+</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 相关构建 -->
+            <section class="build-section">
+                <h2>相关构建</h2>
+                <div class="related-builds">
+                    <div class="build-card-small">
+                        <h4>Moze机甲坦克构建</h4>
+                        <p>注重防御和机甲持续时间的坦克构建</p>
+                        <a href="#" onclick="alert('构建开发中')">查看详情</a>
+                    </div>
+                    <div class="build-card-small">
+                        <h4>Moze火焰地狱构建</h4>
+                        <p>火焰元素伤害的范围清理构建</p>
+                        <a href="#" onclick="alert('构建开发中')">查看详情</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 导航按钮 -->
+            <div class="build-navigation">
+                <a href="/builds/" class="btn btn-secondary">返回构建列表</a>
+                <a href="/" class="btn btn-primary">返回首页</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BL4Builds.net</h4>
+                    <p>Borderlands 4 玩家社区与工具站</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/builds/">构建指南</a></li>
+                        <li><a href="/about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>邮箱：contact@bl4builds.net</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BL4Builds.net. 本站为粉丝站点，与 Gearbox Software 无关。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/site.js"></script>
+</body>
+</html>

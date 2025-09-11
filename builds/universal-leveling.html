@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通用升级构建 - BL4Builds.net</title>
+    <meta name="description" content="适合所有角色的升级构建，帮助新玩家快速适应游戏，高效完成升级过程。">
+    <meta name="keywords" content="Borderlands 4, 通用, 升级, 构建, 新手, 练级">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="通用升级构建 - BL4Builds.net">
+    <meta property="og:description" content="适合所有角色的升级构建，帮助新玩家快速适应游戏。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bl4builds.net/builds/universal-leveling.html">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="/" class="brand-link">BL4Builds.net</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/" class="nav-link">首页</a>
+                    <a href="/builds/" class="nav-link">构建指南</a>
+                    <a href="/about.html" class="nav-link">关于</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">首页</a> > <a href="/builds/">构建指南</a> > <span>通用升级构建</span>
+        </div>
+    </div>
+
+    <!-- 构建详情 -->
+    <main class="main">
+        <div class="container">
+            <!-- 构建头部 -->
+            <div class="build-header">
+                <div class="build-info">
+                    <div class="build-badges">
+                        <span class="character-badge">通用</span>
+                        <span class="difficulty beginner">初级</span>
+                        <span class="patch">v1.0</span>
+                    </div>
+                    <h1 class="build-title">通用升级构建</h1>
+                    <p class="build-subtitle">适合所有角色的升级构建，注重效率和生存，帮助玩家快速度过升级阶段</p>
+                </div>
+                <div class="build-actions">
+                    <button class="btn btn-primary" id="copy-build">复制构建链接</button>
+                    <button class="btn btn-secondary" id="share-build">分享构建</button>
+                </div>
+            </div>
+
+            <!-- TL;DR 区域 -->
+            <section class="build-section">
+                <h2>TL;DR - 快速概览</h2>
+                <div class="tldr-grid">
+                    <div class="tldr-item">
+                        <h4>核心策略</h4>
+                        <p>平衡伤害输出和生存能力，优先选择通用性强的技能</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>主要装备</h4>
+                        <p>当前等级的最佳装备，不追求特定传奇装备</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>适用场景</h4>
+                        <p>1-50级升级过程、主线任务、支线任务</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>难度评级</h4>
+                        <p>极其简单，适合所有玩家，无需复杂操作</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 技能加点原则 -->
+            <section class="build-section">
+                <h2>技能加点原则</h2>
+                <div class="skills-container">
+                    <div class="skill-tree">
+                        <h3>优先级1：生存技能</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">生命值增加</span>
+                                <span class="skill-points">推荐满级</span>
+                                <p class="skill-description">所有角色都有的基础生存技能，优先点满</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">护盾相关技能</span>
+                                <span class="skill-points">3-5点</span>
+                                <p class="skill-description">护盾容量、回复速度等，提高生存能力</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">伤害减免</span>
+                                <span class="skill-points">2-3点</span>
+                                <p class="skill-description">如果角色有此类技能，适度投资</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>优先级2：通用伤害</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">武器伤害增加</span>
+                                <span class="skill-points">推荐满级</span>
+                                <p class="skill-description">适用于所有武器类型的通用伤害提升</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">暴击伤害</span>
+                                <span class="skill-points">3-5点</span>
+                                <p class="skill-description">提高暴击伤害，适用于所有武器</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">射速/装弹</span>
+                                <span class="skill-points">2-3点</span>
+                                <p class="skill-description">提高战斗效率的实用技能</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>优先级3：角色特色</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">终极技能</span>
+                                <span class="skill-points">1点</span>
+                                <p class="skill-description">尽早解锁终极技能，提供强力支援</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">角色专精技能</span>
+                                <span class="skill-points">适度投资</span>
+                                <p class="skill-description">根据角色特点选择1-2个专精方向</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 装备推荐 -->
+            <section class="build-section">
+                <h2>装备推荐</h2>
+                <div class="equipment-grid">
+                    <div class="equipment-category">
+                        <h3>武器选择原则</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>主武器</h4>
+                                <p class="equipment-type">突击步枪/冲锋枪</p>
+                                <p class="equipment-description">选择当前等级最高伤害的武器，优先稀有度高的</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>副武器</h4>
+                                <p class="equipment-type">霰弹枪/狙击枪</p>
+                                <p class="equipment-description">用于特殊情况，近战或远程补充</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>元素武器</h4>
+                                <p class="equipment-type">任意类型</p>
+                                <p class="equipment-description">至少携带一把元素武器应对不同敌人</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>防具选择</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>护盾</h4>
+                                <p class="equipment-type">适应性护盾</p>
+                                <p class="equipment-description">选择容量和回复速度平衡的护盾</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>职业模组</h4>
+                                <p class="equipment-type">平衡型</p>
+                                <p class="equipment-description">提供生存和伤害双重加成的模组</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>升级装备获取</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>商店购买</h4>
+                                <p class="equipment-type">推荐指数：⭐⭐⭐⭐</p>
+                                <p class="equipment-description">定期检查商店，购买当前等级的最佳装备</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>任务奖励</h4>
+                                <p class="equipment-type">推荐指数：⭐⭐⭐⭐⭐</p>
+                                <p class="equipment-description">完成主线和支线任务获得的装备通常很实用</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>箱子开启</h4>
+                                <p class="equipment-type">推荐指数：⭐⭐⭐</p>
+                                <p class="equipment-description">多开箱子，有机会获得稀有装备</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 游戏策略 -->
+            <section class="build-section">
+                <h2>升级策略</h2>
+                <div class="strategy-content">
+                    <div class="strategy-section">
+                        <h3>升级路线</h3>
+                        <ol class="strategy-steps">
+                            <li>优先完成主线任务，获得经验和装备奖励</li>
+                            <li>适当完成支线任务，补充经验和金钱</li>
+                            <li>每5-10级更新一次装备，保持战斗力</li>
+                            <li>学会利用元素克制，提高战斗效率</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>各等级段重点</h3>
+                        <div class="level-guide">
+                            <div class="level-range">
+                                <h4>1-15级：基础阶段</h4>
+                                <ul>
+                                    <li>熟悉角色基础操作</li>
+                                    <li>优先点生命值和武器伤害</li>
+                                    <li>学习使用掩体和医疗包</li>
+                                </ul>
+                            </div>
+                            <div class="level-range">
+                                <h4>16-30级：成长阶段</h4>
+                                <ul>
+                                    <li>解锁终极技能</li>
+                                    <li>开始专精某个技能树</li>
+                                    <li>注意装备的元素类型</li>
+                                </ul>
+                            </div>
+                            <div class="level-range">
+                                <h4>31-50级：完善阶段</h4>
+                                <ul>
+                                    <li>完善技能构建</li>
+                                    <li>寻找更好的装备组合</li>
+                                    <li>准备转向专精构建</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>升级技巧</h3>
+                        <ul class="tips-list">
+                            <li>💰 <strong>金钱管理</strong>：定期卖掉不需要的装备，保持充足资金</li>
+                            <li>📦 <strong>背包管理</strong>：及时清理背包，为新装备腾出空间</li>
+                            <li>🎯 <strong>任务优先级</strong>：主线>有装备奖励的支线>普通支线</li>
+                            <li>⚡ <strong>技能重置</strong>：不要害怕重置技能点，尝试不同搭配</li>
+                            <li>👥 <strong>合作游戏</strong>：与朋友一起游戏可以获得经验加成</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 角色转型建议 -->
+            <section class="build-section">
+                <h2>后期转型建议</h2>
+                <div class="transition-guide">
+                    <div class="character-transition">
+                        <h3>Zane → 电击/冰霜专精</h3>
+                        <p>50级后可以转向电击DPS或冰霜控制构建</p>
+                    </div>
+                    <div class="character-transition">
+                        <h3>Moze → 爆炸/机甲专精</h3>
+                        <p>重点发展爆炸伤害或机甲操控方向</p>
+                    </div>
+                    <div class="character-transition">
+                        <h3>Amara → 元素/近战专精</h3>
+                        <p>可以选择元素法师或近战狂战士路线</p>
+                    </div>
+                    <div class="character-transition">
+                        <h3>FL4K → 宠物/狙击专精</h3>
+                        <p>发展宠物大师或狙击猎手构建</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 导航按钮 -->
+            <div class="build-navigation">
+                <a href="/builds/" class="btn btn-secondary">返回构建列表</a>
+                <a href="/" class="btn btn-primary">返回首页</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BL4Builds.net</h4>
+                    <p>Borderlands 4 玩家社区与工具站</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/builds/">构建指南</a></li>
+                        <li><a href="/about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>邮箱：contact@bl4builds.net</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BL4Builds.net. 本站为粉丝站点，与 Gearbox Software 无关。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/site.js"></script>
+</body>
+</html>

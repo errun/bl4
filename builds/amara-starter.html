@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amara新手入门构建 - BL4Builds.net</title>
+    <meta name="description" content="完美的Amara新手起步构建，易于理解和执行，成长性强，适合刚接触Borderlands 4的玩家。">
+    <meta name="keywords" content="Borderlands 4, Amara, 新手, 入门, 构建, 初学者">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Amara新手入门构建 - BL4Builds.net">
+    <meta property="og:description" content="完美的Amara新手起步构建，易于理解和执行，成长性强。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bl4builds.net/builds/amara-starter.html">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="/" class="brand-link">BL4Builds.net</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/" class="nav-link">首页</a>
+                    <a href="/builds/" class="nav-link">构建指南</a>
+                    <a href="/about.html" class="nav-link">关于</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">首页</a> > <a href="/builds/">构建指南</a> > <span>Amara新手入门构建</span>
+        </div>
+    </div>
+
+    <!-- 构建详情 -->
+    <main class="main">
+        <div class="container">
+            <!-- 构建头部 -->
+            <div class="build-header">
+                <div class="build-info">
+                    <div class="build-badges">
+                        <span class="character-badge">Amara</span>
+                        <span class="difficulty beginner">初级</span>
+                        <span class="patch">v1.0</span>
+                    </div>
+                    <h1 class="build-title">新手入门构建</h1>
+                    <p class="build-subtitle">完美的新手起步构建，通过元素伤害和生存技能帮助新玩家快速适应游戏</p>
+                </div>
+                <div class="build-actions">
+                    <button class="btn btn-primary" id="copy-build">复制构建链接</button>
+                    <button class="btn btn-secondary" id="share-build">分享构建</button>
+                </div>
+            </div>
+
+            <!-- TL;DR 区域 -->
+            <section class="build-section">
+                <h2>TL;DR - 快速概览</h2>
+                <div class="tldr-grid">
+                    <div class="tldr-item">
+                        <h4>核心策略</h4>
+                        <p>利用元素伤害和简单的技能组合，保持高生存能力的同时输出稳定</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>主要装备</h4>
+                        <p>元素武器、生命护盾、平衡型职业模组、生存神器</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>适用场景</h4>
+                        <p>主线任务、支线任务、初级副本、新手练习</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>难度评级</h4>
+                        <p>操作简单，容错率高，非常适合新手学习游戏机制</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 技能加点 -->
+            <section class="build-section">
+                <h2>技能加点</h2>
+                <div class="skills-container">
+                    <div class="skill-tree">
+                        <h3>元素掌控树</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">元素伤害增强</span>
+                                <span class="skill-points">5/5</span>
+                                <p class="skill-description">所有元素伤害增加，是新手最容易理解的伤害提升</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">元素抗性</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">减少受到的元素伤害，提高生存能力</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">元素爆发</span>
+                                <span class="skill-points">1/1</span>
+                                <p class="skill-description">终极技能：释放强力元素攻击，操作简单效果明显</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>生存专精树</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">生命值增加</span>
+                                <span class="skill-points">5/5</span>
+                                <p class="skill-description">直接增加最大生命值，新手必点的生存技能</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">生命回复</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">持续回复生命值，减少对医疗包的依赖</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">护盾回复</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">护盾破碎后快速回复，提高战斗续航</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>武器专精树</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">武器伤害增加</span>
+                                <span class="skill-points">3/5</span>
+                                <p class="skill-description">通用武器伤害提升，适用于所有武器类型</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">装弹速度</span>
+                                <span class="skill-points">2/5</span>
+                                <p class="skill-description">提高换弹速度，减少战斗中的空窗期</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 装备推荐 -->
+            <section class="build-section">
+                <h2>装备推荐</h2>
+                <div class="equipment-grid">
+                    <div class="equipment-category">
+                        <h3>武器</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>元素突击步枪</h4>
+                                <p class="equipment-type">突击步枪 - 稀有/史诗</p>
+                                <p class="equipment-description">主武器，任意元素类型都可以。掉落：常见敌人</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>霰弹枪</h4>
+                                <p class="equipment-type">霰弹枪 - 普通/稀有</p>
+                                <p class="equipment-description">近距离备用武器，高伤害易获得。掉落：任意来源</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>护盾</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>适应性护盾</h4>
+                                <p class="equipment-type">护盾 - 稀有</p>
+                                <p class="equipment-description">平衡的容量和回复速度，新手友好。掉落：护盾商人</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>职业模组/神器</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>平衡大师职业模组</h4>
+                                <p class="equipment-type">职业模组 - 稀有</p>
+                                <p class="equipment-description">+2生命值增加，+1元素伤害增强，全面提升</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>生存者神器</h4>
+                                <p class="equipment-type">神器 - 普通</p>
+                                <p class="equipment-description">生命值+15%，护盾容量+10%，新手必备</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 游戏策略 -->
+            <section class="build-section">
+                <h2>游戏策略</h2>
+                <div class="strategy-content">
+                    <div class="strategy-section">
+                        <h3>战斗循环</h3>
+                        <ol class="strategy-steps">
+                            <li>保持中等距离，使用元素突击步枪进行持续射击</li>
+                            <li>当敌人接近时切换到霰弹枪进行高伤害输出</li>
+                            <li>护盾破碎时寻找掩体，等待自动回复</li>
+                            <li>生命值较低时使用元素爆发清理敌人并获得喘息机会</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>优势与劣势</h3>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>优势</h4>
+                                <ul>
+                                    <li>操作简单，容易上手</li>
+                                    <li>生存能力强，容错率高</li>
+                                    <li>装备要求低，易于获得</li>
+                                    <li>适合学习游戏机制</li>
+                                    <li>成长性好，后期可转型</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>劣势</h4>
+                                <ul>
+                                    <li>伤害输出相对保守</li>
+                                    <li>缺乏特色玩法</li>
+                                    <li>终局表现一般</li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>升级路径</h3>
+                        <p>优先点满生命值增加和元素伤害增强，然后补充生存技能。建议等级：1-30级使用，之后可转向专精构建。</p>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>新手提示</h3>
+                        <ul class="tips-list">
+                            <li>🎯 <strong>瞄准弱点</strong>：大多数敌人的头部是弱点，造成额外伤害</li>
+                            <li>🛡️ <strong>利用掩体</strong>：护盾破碎时躲在掩体后等待回复</li>
+                            <li>💊 <strong>收集医疗包</strong>：地图上的医疗包可以快速回复生命值</li>
+                            <li>🔄 <strong>元素克制</strong>：火克制肉体，电击克制护盾，腐蚀克制装甲</li>
+                            <li>📦 <strong>开启箱子</strong>：多开箱子获得更好的装备</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 相关构建 -->
+            <section class="build-section">
+                <h2>相关构建</h2>
+                <div class="related-builds">
+                    <div class="build-card-small">
+                        <h4>Amara元素法师构建</h4>
+                        <p>进阶的元素伤害专精构建</p>
+                        <a href="#" onclick="alert('构建开发中')">查看详情</a>
+                    </div>
+                    <div class="build-card-small">
+                        <h4>Amara近战狂战士构建</h4>
+                        <p>高风险高回报的近战构建</p>
+                        <a href="#" onclick="alert('构建开发中')">查看详情</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 导航按钮 -->
+            <div class="build-navigation">
+                <a href="/builds/" class="btn btn-secondary">返回构建列表</a>
+                <a href="/" class="btn btn-primary">返回首页</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BL4Builds.net</h4>
+                    <p>Borderlands 4 玩家社区与工具站</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/builds/">构建指南</a></li>
+                        <li><a href="/about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>邮箱：contact@bl4builds.net</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BL4Builds.net. 本站为粉丝站点，与 Gearbox Software 无关。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/site.js"></script>
+</body>
+</html>

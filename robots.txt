@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bl4builds.net/sitemap.xml

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队辅助构建 - BL4Builds.net</title>
+    <meta name="description" content="专为团队合作设计的辅助构建，提供强力的团队增益效果，适合多人游戏。">
+    <meta name="keywords" content="Borderlands 4, 团队, 辅助, 支援, 构建, 多人">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="团队辅助构建 - BL4Builds.net">
+    <meta property="og:description" content="专为团队合作设计的辅助构建，提供强力的团队增益效果。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bl4builds.net/builds/team-support.html">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="/" class="brand-link">BL4Builds.net</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/" class="nav-link">首页</a>
+                    <a href="/builds/" class="nav-link">构建指南</a>
+                    <a href="/about.html" class="nav-link">关于</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">首页</a> > <a href="/builds/">构建指南</a> > <span>团队辅助构建</span>
+        </div>
+    </div>
+
+    <!-- 构建详情 -->
+    <main class="main">
+        <div class="container">
+            <!-- 构建头部 -->
+            <div class="build-header">
+                <div class="build-info">
+                    <div class="build-badges">
+                        <span class="character-badge">团队</span>
+                        <span class="difficulty advanced">高级</span>
+                        <span class="patch">v1.0</span>
+                    </div>
+                    <h1 class="build-title">团队辅助构建</h1>
+                    <p class="build-subtitle">专为团队合作设计的辅助构建，通过增益效果和支援技能最大化团队整体战斗力</p>
+                </div>
+                <div class="build-actions">
+                    <button class="btn btn-primary" id="copy-build">复制构建链接</button>
+                    <button class="btn btn-secondary" id="share-build">分享构建</button>
+                </div>
+            </div>
+
+            <!-- TL;DR 区域 -->
+            <section class="build-section">
+                <h2>TL;DR - 快速概览</h2>
+                <div class="tldr-grid">
+                    <div class="tldr-item">
+                        <h4>核心策略</h4>
+                        <p>优先团队增益和支援技能，牺牲个人输出换取团队整体提升</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>主要装备</h4>
+                        <p>增益武器、支援护盾、团队强化模组、光环神器</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>适用场景</h4>
+                        <p>团队副本、高难度挑战、Boss战、竞技模式</p>
+                    </div>
+                    <div class="tldr-item">
+                        <h4>难度评级</h4>
+                        <p>需要良好的团队意识和沟通，适合有经验的团队玩家</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 技能加点 -->
+            <section class="build-section">
+                <h2>技能加点原则</h2>
+                <div class="skills-container">
+                    <div class="skill-tree">
+                        <h3>团队增益技能</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">团队伤害光环</span>
+                                <span class="skill-points">满级</span>
+                                <p class="skill-description">为附近队友提供伤害加成，核心辅助技能</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">团队生存光环</span>
+                                <span class="skill-points">满级</span>
+                                <p class="skill-description">提高队友生命值和护盾回复速度</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">经验分享</span>
+                                <span class="skill-points">3-5点</span>
+                                <p class="skill-description">击杀敌人时为队友提供额外经验</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>支援专精技能</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">复活加速</span>
+                                <span class="skill-points">满级</span>
+                                <p class="skill-description">更快复活倒下的队友，并提供临时增益</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">治疗分享</span>
+                                <span class="skill-points">3-5点</span>
+                                <p class="skill-description">自己回复生命时，队友也获得治疗</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">弹药分享</span>
+                                <span class="skill-points">2-3点</span>
+                                <p class="skill-description">击杀敌人时为队友回复弹药</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-tree">
+                        <h3>战术协调技能</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">标记敌人</span>
+                                <span class="skill-points">1点</span>
+                                <p class="skill-description">标记的敌人受到队友更多伤害</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">战术指挥</span>
+                                <span class="skill-points">满级</span>
+                                <p class="skill-description">终极技能冷却时间减少，影响范围扩大</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 装备推荐 -->
+            <section class="build-section">
+                <h2>装备推荐</h2>
+                <div class="equipment-grid">
+                    <div class="equipment-category">
+                        <h3>武器</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>团队增益步枪</h4>
+                                <p class="equipment-type">突击步枪 - 传奇</p>
+                                <p class="equipment-description">击中敌人时为队友提供伤害加成。掉落：团队试炼</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>治疗手枪</h4>
+                                <p class="equipment-type">手枪 - 史诗</p>
+                                <p class="equipment-description">射击队友可以为其回复生命值。掉落：医疗站商人</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>护盾</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>分享护盾</h4>
+                                <p class="equipment-type">护盾 - 传奇</p>
+                                <p class="equipment-description">护盾满时为附近队友提供护盾加成。掉落：合作试炼</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="equipment-category">
+                        <h3>职业模组/神器</h3>
+                        <div class="equipment-list">
+                            <div class="equipment-item">
+                                <h4>团队领袖职业模组</h4>
+                                <p class="equipment-type">职业模组 - 传奇</p>
+                                <p class="equipment-description">+3团队伤害光环，+2复活加速，光环范围+50%</p>
+                            </div>
+                            <div class="equipment-item">
+                                <h4>团结神器</h4>
+                                <p class="equipment-type">神器 - 史诗</p>
+                                <p class="equipment-description">队友数量越多，所有增益效果越强</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 游戏策略 -->
+            <section class="build-section">
+                <h2>团队策略</h2>
+                <div class="strategy-content">
+                    <div class="strategy-section">
+                        <h3>战斗定位</h3>
+                        <ol class="strategy-steps">
+                            <li>保持在队友附近，确保光环效果覆盖全队</li>
+                            <li>优先标记高价值目标，引导团队火力</li>
+                            <li>时刻关注队友状态，及时提供支援</li>
+                            <li>在安全位置提供持续的增益效果</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>团队配合</h3>
+                        <div class="team-roles">
+                            <div class="role-combo">
+                                <h4>与DPS角色配合</h4>
+                                <ul>
+                                    <li>为DPS提供伤害和暴击加成</li>
+                                    <li>标记优先击杀目标</li>
+                                    <li>提供弹药补给支援</li>
+                                </ul>
+                            </div>
+                            <div class="role-combo">
+                                <h4>与坦克角色配合</h4>
+                                <ul>
+                                    <li>增强坦克的生存能力</li>
+                                    <li>提供治疗和护盾支援</li>
+                                    <li>协助控制敌人仇恨</li>
+                                </ul>
+                            </div>
+                            <div class="role-combo">
+                                <h4>与其他辅助配合</h4>
+                                <ul>
+                                    <li>分工不同类型的增益效果</li>
+                                    <li>轮流使用终极技能</li>
+                                    <li>互相提供支援保护</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>优势与劣势</h3>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>优势</h4>
+                                <ul>
+                                    <li>大幅提升团队整体战斗力</li>
+                                    <li>提供关键的生存支援</li>
+                                    <li>增强团队协作效率</li>
+                                    <li>在困难内容中不可替代</li>
+                                    <li>团队成就感强</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>劣势</h4>
+                                <ul>
+                                    <li>个人输出能力有限</li>
+                                    <li>单人游戏效果差</li>
+                                    <li>需要良好的团队沟通</li>
+                                    <li>对队友依赖性强</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-section">
+                        <h3>团队沟通要点</h3>
+                        <ul class="tips-list">
+                            <li>🎯 <strong>目标标记</strong>：及时标记优先击杀的敌人</li>
+                            <li>💊 <strong>状态通报</strong>：告知队友自己的技能冷却状态</li>
+                            <li>🚨 <strong>危险预警</strong>：提醒队友注意威胁和陷阱</li>
+                            <li>🔄 <strong>位置协调</strong>：引导队友保持合适的战斗阵型</li>
+                            <li>⚡ <strong>技能配合</strong>：与队友协调终极技能使用时机</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 不同角色的辅助特色 -->
+            <section class="build-section">
+                <h2>各角色辅助特色</h2>
+                <div class="character-support">
+                    <div class="support-style">
+                        <h3>Zane辅助特色</h3>
+                        <p>擅长提供移动速度和攻击速度加成，适合快节奏团队</p>
+                        <ul>
+                            <li>团队移动速度提升</li>
+                            <li>攻击速度和装弹速度加成</li>
+                            <li>电击链式伤害支援</li>
+                        </ul>
+                    </div>
+                    <div class="support-style">
+                        <h3>Moze辅助特色</h3>
+                        <p>通过机甲和爆炸伤害提供火力支援和区域控制</p>
+                        <ul>
+                            <li>机甲火力支援</li>
+                            <li>弹药分享和补给</li>
+                            <li>爆炸范围伤害支援</li>
+                        </ul>
+                    </div>
+                    <div class="support-style">
+                        <h3>Amara辅助特色</h3>
+                        <p>元素伤害增益和生命回复支援，平衡型辅助</p>
+                        <ul>
+                            <li>元素伤害加成分享</li>
+                            <li>团队生命回复</li>
+                            <li>元素抗性提升</li>
+                        </ul>
+                    </div>
+                    <div class="support-style">
+                        <h3>FL4K辅助特色</h3>
+                        <p>通过宠物和狩猎技能提供战术支援</p>
+                        <ul>
+                            <li>宠物协助和保护</li>
+                            <li>敌人弱点标记</li>
+                            <li>暴击伤害加成分享</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 相关构建 -->
+            <section class="build-section">
+                <h2>相关构建</h2>
+                <div class="related-builds">
+                    <div class="build-card-small">
+                        <h4>坦克防御构建</h4>
+                        <p>专注防御和仇恨控制的坦克构建</p>
+                        <a href="#" onclick="alert('构建开发中')">查看详情</a>
+                    </div>
+                    <div class="build-card-small">
+                        <h4>团队DPS构建</h4>
+                        <p>在团队环境下优化的高输出构建</p>
+                        <a href="#" onclick="alert('构建开发中')">查看详情</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 导航按钮 -->
+            <div class="build-navigation">
+                <a href="/builds/" class="btn btn-secondary">返回构建列表</a>
+                <a href="/" class="btn btn-primary">返回首页</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BL4Builds.net</h4>
+                    <p>Borderlands 4 玩家社区与工具站</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/builds/">构建指南</a></li>
+                        <li><a href="/about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>邮箱：contact@bl4builds.net</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BL4Builds.net. 本站为粉丝站点，与 Gearbox Software 无关。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/site.js"></script>
+</body>
+</html>
