@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7C4DFF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b1"/>
+      <feGaussianBlur in="b1" stdDeviation="8" result="b2"/>
+      <feMerge>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Neon shield -->
+  <g filter="url(#glow)">
+    <path d="M128 12 L208 44 L208 124 C208 170 174 210 128 232 C82 210 48 170 48 124 L48 44 Z"
+          fill="#081018" stroke="url(#g1)" stroke-width="6"/>
+  </g>
+
+  <!-- Lightning bolt -->
+  <g filter="url(#glow)">
+    <path d="M138 52 L96 132 L126 132 L108 204 L160 112 L132 112 Z"
+          fill="url(#g1)"/>
+  </g>
+
+  <!-- BL4 text -->
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif" font-weight="800" font-size="48" text-anchor="middle" filter="url(#glow)">
+    <text x="88" y="94" fill="#E0F7FF">B</text>
+    <text x="120" y="94" fill="#E0F7FF">L</text>
+    <text x="176" y="94" fill="#E0F7FF">4</text>
+  </g>
+</svg>
+
