@@ -1484,3 +1484,18 @@ img {
 .trailer { padding: var(--spacing-3xl) 0; }
 .video-embed { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); }
 .video-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+
+/* === Performance & media optimizations === */
+/* Reserve aspect ratio for cards and gallery to avoid layout shift */
+.build-card picture, .media-grid picture { display:block; aspect-ratio: 16 / 9; }
+.build-card picture img, .media-grid picture img { width:100%; height:100%; object-fit:cover; }
+
+/* Defer rendering of below-the-fold sections */
+.top-builds, .videos, .media-strip { content-visibility: auto; contain-intrinsic-size: 800px; }
+
+/* Lite YouTube placeholder */
+.yt-lite { position: relative; cursor: pointer; }
+.yt-lite .yt-thumb { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter: brightness(0.9); }
+.yt-lite .yt-play { position:absolute; left:50%; top:50%; transform: translate(-50%,-50%); width:68px; height:48px; background: rgba(0,0,0,0.6); border-radius: 12px; display:flex; align-items:center; justify-content:center; color:#fff; font-size: 24px; box-shadow: var(--shadow-md); }
+.yt-lite:focus { outline: 2px solid var(--primary-color); outline-offset: 2px; }
