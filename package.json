@@ -1,0 +1,23 @@
+{
+  "name": "gameweb",
+  "version": "1.0.0",
+  "description": "Borderlands 4 玩家社区与工具站，聚焦 Build（技能加点 + 装备搭配）分享与查询。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/errun/bl4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/errun/bl4/issues"
+  },
+  "homepage": "https://github.com/errun/bl4#readme",
+  "devDependencies": {
+    "sharp": "^0.34.3"
+  }
+}
