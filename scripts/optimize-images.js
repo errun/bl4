@@ -25,26 +25,51 @@ async function main() {
     return;
   }
 
-  console.log('Converting to WebP (quality 80):');
+  console.log('Converting to WebP (quality 80) + responsive sizes:');
+  const sizeMap = {
+    // hero gets larger breakpoints
+    'hero': [768, 1280, 1920],
+    // visuals default
+    '*': [480, 768, 1200]
+  };
+
   for (const name of targets) {
     const src = path.join(SRC_DIR, name);
     const base = name.replace(/\.(jpe?g|png)$/i, '');
-    const out = path.join(SRC_DIR, base + '.webp');
-    if (fs.existsSync(out)) {
-      console.log('  skip (exists):', path.basename(out));
-      continue;
+
+    // 1) baseline full-size .webp
+    const fullOut = path.join(SRC_DIR, base + '.webp');
+    if (!fs.existsSync(fullOut)) {
+      try {
+        const img = sharp(src);
+        const metadata = await img.metadata();
+        await img.webp({ quality: 80 }).toFile(fullOut);
+        const outStat = fs.statSync(fullOut);
+        const inStat = fs.statSync(src);
+        console.log(`  ok: ${path.basename(src)} -> ${path.basename(fullOut)}  (${Math.round(outStat.size/1024)}KB from ${Math.round(inStat.size/1024)}KB)`);
+      } catch (err) {
+        console.error('  fail full:', name, err.message);
+      }
+    } else {
+      console.log('  skip full (exists):', path.basename(fullOut));
     }
-    try {
-      const img = sharp(src);
-      const metadata = await img.metadata();
-      await img.webp({ quality: 80 }).toFile(out);
-      const outStat = fs.statSync(out);
-      const inStat = fs.statSync(src);
-      console.log(
-        `  ok: ${path.basename(src)} -> ${path.basename(out)}  (${Math.round(outStat.size/1024)}KB from ${Math.round(inStat.size/1024)}KB, ${metadata.width}x${metadata.height})`
-      );
-    } catch (err) {
-      console.error('  fail:', name, err.message);
+
+    // 2) responsive sized variants
+    const key = base.startsWith('hero') ? 'hero' : '*';
+    const sizes = sizeMap[key];
+    for (const w of sizes) {
+      const out = path.join(SRC_DIR, `${base}-${w}w.webp`);
+      if (fs.existsSync(out)) {
+        console.log('  skip size (exists):', path.basename(out));
+        continue;
+      }
+      try {
+        await sharp(src).resize({ width: w }).webp({ quality: 80 }).toFile(out);
+        const outStat = fs.statSync(out);
+        console.log(`  ok size: ${base}-${w}w.webp (${Math.round(outStat.size/1024)}KB)`);
+      } catch (err) {
+        console.error('  fail size:', name, w, err.message);
+      }
     }
   }
   console.log('Done.');

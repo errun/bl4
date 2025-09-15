@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initBuildSearch();
     initBuildFilters();
     initCopyFunctionality();
+    initLiteYouTube();
 });
 
 // 移动端菜单切换
@@ -222,6 +223,35 @@ function showNotification(message) {
             document.body.removeChild(notification);
         }, 300);
     }, 3000);
+}
+
+// 轻量 YouTube 预载（点击时才创建 iframe）
+function initLiteYouTube() {
+    const els = document.querySelectorAll('.yt-lite[data-ytid]');
+    els.forEach(el => {
+        el.setAttribute('tabindex', '0');
+        const id = el.getAttribute('data-ytid');
+        const activate = () => {
+            // 防止重复初始化
+            if (el.classList.contains('is-active')) return;
+            el.classList.add('is-active');
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+            iframe.title = 'YouTube video player';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            iframe.allowFullscreen = true;
+            // 清空缩略图并插入 iframe
+            el.innerHTML = '';
+            el.appendChild(iframe);
+        };
+        el.addEventListener('click', activate, { once: true });
+        el.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                activate();
+            }
+        });
+    });
 }
 
 // 平滑滚动到锚点
