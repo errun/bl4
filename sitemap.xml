@@ -4,7 +4,7 @@
     <!-- Home (zh/en) -->
     <url>
         <loc>https://bl4builds.net/</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/" />
@@ -12,7 +12,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/" />
@@ -22,7 +22,7 @@
     <!-- Builds index (zh/en) -->
     <url>
         <loc>https://bl4builds.net/builds/</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/" />
@@ -30,7 +30,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/builds/</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/" />
@@ -40,7 +40,7 @@
     <!-- About (zh/en) -->
     <url>
         <loc>https://bl4builds.net/about.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/about.html" />
@@ -48,7 +48,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/about.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/about.html" />
@@ -58,7 +58,7 @@
     <!-- Build details (zh/en pairs) -->
     <url>
         <loc>https://bl4builds.net/builds/zane-endgame-shock-dps.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/zane-endgame-shock-dps.html" />
@@ -66,7 +66,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/builds/zane-endgame-shock-dps.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/zane-endgame-shock-dps.html" />
@@ -75,7 +75,7 @@
 
     <url>
         <loc>https://bl4builds.net/builds/moze-solo-boss.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/moze-solo-boss.html" />
@@ -83,7 +83,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/builds/moze-solo-boss.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/moze-solo-boss.html" />
@@ -92,7 +92,7 @@
 
     <url>
         <loc>https://bl4builds.net/builds/amara-starter.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/amara-starter.html" />
@@ -100,7 +100,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/builds/amara-starter.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/amara-starter.html" />
@@ -109,7 +109,7 @@
 
     <url>
         <loc>https://bl4builds.net/builds/fl4k-pet-master.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/fl4k-pet-master.html" />
@@ -117,7 +117,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/builds/fl4k-pet-master.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/fl4k-pet-master.html" />
@@ -126,7 +126,7 @@
 
     <url>
         <loc>https://bl4builds.net/builds/universal-leveling.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/universal-leveling.html" />
@@ -134,7 +134,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/builds/universal-leveling.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/universal-leveling.html" />
@@ -143,7 +143,7 @@
 
     <url>
         <loc>https://bl4builds.net/builds/team-support.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/team-support.html" />
@@ -151,7 +151,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/builds/team-support.html</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/team-support.html" />

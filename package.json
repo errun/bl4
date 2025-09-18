@@ -4,6 +4,7 @@
   "description": "Borderlands 4 玩家社区与工具站，聚焦 Build（技能加点 + 装备搭配）分享与查询。",
   "main": "index.js",
   "scripts": {
+    "sitemap:update": "node scripts/update-sitemap-lastmod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
