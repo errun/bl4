@@ -156,5 +156,142 @@
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/team-support.html" />
         <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/builds/team-support.html" />
+
+    <!-- Tag landing pages (zh/en pairs) -->
+    <url>
+        <loc>https://bl4builds.net/tags/endgame.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/endgame.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/endgame.html"/>
     </url>
+    <url>
+        <loc>https://bl4builds.net/en/tags/endgame.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/endgame.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/endgame.html"/>
+    </url>
+
+    <url>
+        <loc>https://bl4builds.net/tags/leveling.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/leveling.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/leveling.html"/>
+    </url>
+    <url>
+        <loc>https://bl4builds.net/en/tags/leveling.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/leveling.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/leveling.html"/>
+    </url>
+
+    <url>
+        <loc>https://bl4builds.net/tags/boss.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/boss.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/boss.html"/>
+    </url>
+    <url>
+        <loc>https://bl4builds.net/en/tags/boss.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/boss.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/boss.html"/>
+    </url>
+
+    <url>
+        <loc>https://bl4builds.net/tags/beginner.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/beginner.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/beginner.html"/>
+    </url>
+    <url>
+        <loc>https://bl4builds.net/en/tags/beginner.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/beginner.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/beginner.html"/>
+    </url>
+
+    <url>
+        <loc>https://bl4builds.net/tags/guide.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/guide.html"/>
+    </url>
+    <url>
+        <loc>https://bl4builds.net/en/tags/guide.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/guide.html"/>
+    </url>
+
+    <url>
+        <loc>https://bl4builds.net/tags/skill-trees.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/skill-trees.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/skill-trees.html"/>
+    </url>
+    <url>
+        <loc>https://bl4builds.net/en/tags/skill-trees.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/skill-trees.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/skill-trees.html"/>
+    </url>
+
+    <url>
+        <loc>https://bl4builds.net/tags/vex.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/vex.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/vex.html"/>
+    </url>
+    <url>
+        <loc>https://bl4builds.net/en/tags/vex.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/vex.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/vex.html"/>
+    </url>
+
+    <url>
+        <loc>https://bl4builds.net/tags/rafa.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/rafa.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/rafa.html"/>
+    </url>
+    <url>
+        <loc>https://bl4builds.net/en/tags/rafa.html</loc>
+        <lastmod>2025-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/rafa.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/tags/rafa.html"/>
+    </url>
+
 </urlset>

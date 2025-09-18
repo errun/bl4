@@ -1524,3 +1524,14 @@ img {
 .yt-modal__player iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
 .yt-modal__close{ position:absolute; right:8px; top:8px; z-index:2; width:36px; height:36px; border:0; border-radius:50%; background: rgba(255,255,255,.9); color:#111; font-size:20px; line-height:1; cursor:pointer; box-shadow: var(--shadow-md); }
 .yt-modal__close:hover{ background:#fff; }
+
+
+/* === Tag landing pages === */
+.tag-header{ margin: var(--spacing-lg) 0 var(--spacing-md); }
+.tag-builds-list{ list-style:none; padding:0; margin:0 0 var(--spacing-lg); display:grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: var(--spacing-md); }
+.tag-builds-list a{ display:block; padding:10px 12px; border:1px solid var(--light-border); border-radius: var(--border-radius-md); background: var(--light-bg); box-shadow: var(--shadow-sm); }
+.tag-builds-list a:hover{ border-color: var(--primary-color); box-shadow: var(--shadow-md); }
+.tag-videos-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: var(--spacing-lg); }
+.tag-videos-grid .video-thumb{ position:relative; display:block; border-radius: var(--border-radius-md); overflow:hidden; box-shadow: var(--shadow-sm); background:#000; }
+.tag-videos-grid .video-thumb img{ width:100%; height:auto; display:block; filter: brightness(.95); }
+.tag-videos-grid .video-thumb .caption{ position:absolute; left:0; right:0; bottom:0; padding:8px 10px; color:#fff; background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,0)); font-size: var(--font-size-sm); }
