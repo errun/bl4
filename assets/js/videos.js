@@ -26,7 +26,7 @@
           '<div class="filter-actions">'+
             '<button type="button" class="btn btn-small" id="vf-clear">Clear</button>\n'+
             '<label class="match-toggle"><input type="checkbox" id="vf-any" /> Match any</label>\n'+
-            '<span class="vf-count" id="vf-count" aria-live="polite"></span>'+\
+            '<span class="vf-count" id="vf-count" aria-live="polite"></span>'+
           '</div>'+
           '<div class="filter-tags">'+ allTags.map(function(t){
               return '<label class="filter-tag"><input type="checkbox" value="'+t+'"><span>'+t+'</span></label>';
