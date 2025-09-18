@@ -41,7 +41,7 @@
         var tagsHtml = (v.tags||[]).map(function(t){return '<span class="tag">'+t+'</span>';}).join('');
         parts.push(
           '<div class="video-card" data-tags="'+(v.tags||[]).join(',')+'">'+
-            '<a class="thumb" href="https://www.youtube.com/watch?v='+v.id+'" target="_blank" rel="noopener">'+
+            '<a class="thumb" href="#" data-yt="'+v.id+'">'+
               '<img src="'+thumb+'" alt="'+(v.title||'BL4 video')+'" loading="lazy" decoding="async" />'+
               '<div class="yt-play">▶</div>'+
             '</a>'+
@@ -55,6 +55,44 @@
       parts.push('</div>');
 
       container.innerHTML = parts.join('');
+
+      // Modal player for in-site playback (YouTube no-cookie)
+      var modal = document.createElement('div');
+      modal.className = 'yt-modal';
+      modal.setAttribute('hidden','');
+      modal.innerHTML = ''+
+        '<div class="yt-modal__backdrop" data-close="1"></div>'+
+        '<div class="yt-modal__dialog" role="dialog" aria-modal="true" aria-label="YouTube player">'+
+          '<button class="yt-modal__close" type="button" aria-label="Close">×</button>'+
+          '<div class="yt-modal__player">'+
+            '<iframe id="yt-iframe" src="" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>'+
+          '</div>'+
+        '</div>';
+      document.body.appendChild(modal);
+      var iframe = modal.querySelector('#yt-iframe');
+      function openModal(id){
+        iframe.src = 'https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&modestbranding=1';
+        modal.removeAttribute('hidden');
+        document.body.style.overflow='hidden';
+      }
+      function closeModal(){
+        iframe.src = '';
+        modal.setAttribute('hidden','');
+        document.body.style.overflow='';
+      }
+      modal.addEventListener('click', function(e){ if(e.target.dataset.close){ closeModal(); } });
+      modal.querySelector('.yt-modal__close').addEventListener('click', closeModal);
+      document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !modal.hasAttribute('hidden')) closeModal(); });
+
+      // Intercept thumbnail clicks to open modal
+      container.addEventListener('click', function(e){
+        var a = e.target.closest('a.thumb');
+        if(!a || !container.contains(a)) return;
+        e.preventDefault();
+        var id = a.getAttribute('data-yt');
+        if(id) openModal(id);
+      });
+
 
       // Wiring filter logic
       var grid = document.getElementById('vf-grid');
