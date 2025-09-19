@@ -1,43 +1,31 @@
 [
-  {
-    "id": "C5FuLSM6CgM",
-    "title": "Vex is BROKEN! Infinite Damage Build Guide",
-    "channel": "YouTube Creator",
-    "published": "2025-09-14",
-    "tags": ["Vex", "Endgame", "Build", "Guide", "EN"],
-    "url": "https://www.youtube.com/watch?v=C5FuLSM6CgM"
-  },
-  {
-    "id": "tDSSHuECIX0",
-    "title": "BEST Vex Build For Leveling + Early End Game",
-    "channel": "YouTube Creator",
-    "published": "2025-09-12",
-    "tags": ["Vex", "Leveling", "Beginner", "Build", "EN"],
-    "url": "https://www.youtube.com/watch?v=tDSSHuECIX0"
-  },
-  {
-    "id": "y2-KHH8EcAc",
-    "title": "BL4 Best Builds & ALL Vex Skill Trees",
-    "channel": "YouTube Creator",
-    "published": "2025-09-13",
-    "tags": ["Vex", "Skill Trees", "Guide", "EN"],
-    "url": "https://www.youtube.com/watch?v=y2-KHH8EcAc"
-  },
-  {
-    "id": "njUJe4FNzA8",
-    "title": "RAFA Guide For Beginners",
-    "channel": "YouTube Creator",
-    "published": "2025-09-15",
-    "tags": ["Rafa", "Beginner", "Guide", "EN"],
-    "url": "https://www.youtube.com/watch?v=njUJe4FNzA8"
-  },
-  {
-    "id": "YKjeVCvHrH0",
-    "title": "BEST VEX BUILD (1-Shot All Bosses!)",
-    "channel": "YouTube Creator",
-    "published": "2025-09-14",
-    "tags": ["Vex", "Boss", "Endgame", "Build", "EN"],
-    "url": "https://www.youtube.com/watch?v=YKjeVCvHrH0"
-  }
-]
+  {"id":"C5FuLSM6CgM","title":"Vex is BROKEN! Infinite Damage Build Guide","channel":"YouTube Creator","published":"2025-09-14","tags":["Vex","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=C5FuLSM6CgM"},
+  {"id":"tDSSHuECIX0","title":"BEST Vex Build For Leveling + Early End Game","channel":"YouTube Creator","published":"2025-09-12","tags":["Vex","Leveling","Beginner","Build","EN"],"url":"https://www.youtube.com/watch?v=tDSSHuECIX0"},
+  {"id":"y2-KHH8EcAc","title":"BL4 Best Builds & ALL Vex Skill Trees","channel":"YouTube Creator","published":"2025-09-13","tags":["Vex","Skill Trees","Guide","EN"],"url":"https://www.youtube.com/watch?v=y2-KHH8EcAc"},
+  {"id":"njUJe4FNzA8","title":"RAFA Guide For Beginners","channel":"YouTube Creator","published":"2025-09-15","tags":["Rafa","Beginner","Guide","EN"],"url":"https://www.youtube.com/watch?v=njUJe4FNzA8"},
+  {"id":"YKjeVCvHrH0","title":"BEST VEX BUILD (1-Shot All Bosses!)","channel":"YouTube Creator","published":"2025-09-14","tags":["Vex","Boss","Endgame","Build","EN"],"url":"https://www.youtube.com/watch?v=YKjeVCvHrH0"},
 
+  {"id":"Dp31yGwTYoQ","title":"Best Vex Build for Fast Leveling in Borderlands 4!","channel":"YouTube Creator","published":"2025-09-12","tags":["Vex","Leveling","Beginner","Guide","EN"],"url":"https://www.youtube.com/watch?v=Dp31yGwTYoQ"},
+  {"id":"nX0AhLSil3g","title":"New Best Most OP Endgame Vex Build - Easy TRILLION DPS","channel":"YouTube Creator","published":"2025-09-17","tags":["Vex","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=nX0AhLSil3g"},
+  {"id":"EdP686JS1jE","title":"BEST Vex Build CRUSHES Everything! (Leveling & Endgame)","channel":"YouTube Creator","published":"2025-09-15","tags":["Vex","Leveling","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=EdP686JS1jE"},
+  {"id":"iA4yruXdVNs","title":"Borderlands 4 BEST VEX BUILD FOR EARLY GAME - Beginner","channel":"YouTube Creator","published":"2025-09-15","tags":["Vex","Beginner","Leveling","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=iA4yruXdVNs"},
+  {"id":"Rag-HjUSAP0","title":"BEST VEX MINION BUILD (Instakills All Bosses UVH5)","channel":"YouTube Creator","published":"2025-09-15","tags":["Vex","Boss","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=Rag-HjUSAP0"},
+  {"id":"sUgTJNlOroc","title":"VEX BLEED BUILD Theorycraft! // Bloody Reaper Vex","channel":"YouTube Creator","published":"2025-07-09","tags":["Vex","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=sUgTJNlOroc"},
+
+  {"id":"U2kTi-EJpHs","title":"UPDATED RAFA (1-Shot Bosses!) // Ricochet Rafa Build","channel":"YouTube Creator","published":"2025-09-18","tags":["Rafa","Boss","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=U2kTi-EJpHs"},
+  {"id":"XZu2fzWjUCE","title":"BEST Rafa Build For Leveling + End Game! INSANE Damage","channel":"YouTube Creator","published":"2025-09-14","tags":["Rafa","Leveling","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=XZu2fzWjUCE"},
+  {"id":"F8crtXfvX8I","title":"OVERPOWERED UVH5 Rafa Build Nukes Anything","channel":"YouTube Creator","published":"2025-09-16","tags":["Rafa","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=F8crtXfvX8I"},
+  {"id":"Do1Bjxgknzw","title":"The Most BROKEN RAFA Build 'INFINITE DAMAGE'","channel":"YouTube Creator","published":"2025-09-17","tags":["Rafa","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=Do1Bjxgknzw"},
+  {"id":"bEdqs3xPoaE","title":"New Rafa Most OP Build | UVH5 Rafa Boss Melter","channel":"YouTube Creator","published":"2025-09-17","tags":["Rafa","Boss","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=bEdqs3xPoaE"},
+  {"id":"IlF5-nKdBFY","title":"DOOM Slayer Build | Speedy, Powerful & Explosive Rafa","channel":"YouTube Creator","published":"2025-09-16","tags":["Rafa","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=IlF5-nKdBFY"},
+
+  {"id":"cVAh0zE59pQ","title":"Best XP Leveling + Loot Farm Guide! Fast Levels","channel":"YouTube Creator","published":"2025-09-13","tags":["Leveling","Guide","EN"],"url":"https://www.youtube.com/watch?v=cVAh0zE59pQ"},
+  {"id":"ZUdSFWx6XE","title":"THE BEST Amon Minion Leveling Build (Beginner Friendly)","channel":"YouTube Creator","published":"2025-09-15","tags":["Leveling","Beginner","Guide","EN"],"url":"https://www.youtube.com/watch?v=ZUdSFWx6XE"},
+  {"id":"Bs14vvqg7oo","title":"BEST XP FARM! (Level 30–50 in 4 Hours!!) // Leveling Guide","channel":"YouTube Creator","published":"2025-09-14","tags":["Leveling","Guide","EN"],"url":"https://www.youtube.com/watch?v=Bs14vvqg7oo"},
+
+  {"id":"wYWxDgwJsHo","title":"BEST BOSSING Harlowe Build (UVHM 5)","channel":"YouTube Creator","published":"2025-09-15","tags":["Boss","Endgame","Build","Guide","EN"],"url":"https://www.youtube.com/watch?v=wYWxDgwJsHo"},
+  {"id":"YetL8o02Osw","title":"ONE SHOT BOSS Kill Build (SO OP!!)","channel":"YouTube Creator","published":"2025-09-11","tags":["Boss","Guide","EN"],"url":"https://www.youtube.com/watch?v=YetL8o02Osw"},
+
+  {"id":"nejx6VOdn_M","title":"FULL Vex Skill Tree Revealed! (Over 100+ New)","channel":"YouTube Creator","published":"2025-06-18","tags":["Vex","Skill Trees","Guide","EN"],"url":"https://www.youtube.com/watch?v=nejx6VOdn_M"},
+  {"id":"GbJosqOplsA","title":"FULL Rafa Skill Tree Revealed! (Over 100+ New)","channel":"YouTube Creator","published":"2025-06-18","tags":["Rafa","Skill Trees","Guide","EN"],"url":"https://www.youtube.com/watch?v=GbJosqOplsA"}
+]
