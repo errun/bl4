@@ -39,7 +39,7 @@
     <!-- Videos index (zh/en) -->
     <url>
         <loc>https://bl4builds.net/videos/</loc>
-        <lastmod>2025-09-19</lastmod>
+        <lastmod>2025-09-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/videos/" />
