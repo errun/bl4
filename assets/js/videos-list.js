@@ -55,7 +55,11 @@
       var id = v.id || '';
       var thumb = 'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg';
       var href = 'https://www.youtube.com/watch?v='+id;
-      return '<a class="video-thumb" href="'+href+'" target="_blank" rel="noopener">'
+      var isNew = (v && (v.new === true || (function(){
+        var d = v.published; if(!d) return false; var dt = new Date(d); if(isNaN(dt)) return false; return (Date.now() - dt.getTime()) <= 2*24*60*60*1000;
+      })()));
+      return '<a class="video-thumb" href="'+href+'" target="_blank" rel="noopener" style="position:relative">'
+           +   (isNew? '<span class="badge-new" style="position:absolute;top:6px;left:6px;z-index:2;background:#e91e63;color:#fff;border-radius:4px;padding:2px 6px;font-size:12px;line-height:1;">NEW</span>' : '')
            +   '<img src="'+thumb+'" alt="'+title.replace(/"/g, '&quot;')+'" loading="lazy">'
            +   '<span class="caption">'+title+'</span>'
            + '</a>';
