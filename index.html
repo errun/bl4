@@ -33,12 +33,13 @@
       if (p === '/' || p === '/index.html') {
         var params = new URLSearchParams(location.search || '');
         var lang = params.get('lang');
-        if (lang === 'en') { localStorage.setItem('bl4_lang','en'); location.replace('/en/'); return; }
-        if (lang === 'zh') { localStorage.setItem('bl4_lang','zh'); location.replace('/videos/'); return; }
+        if (lang === 'en') { localStorage.setItem('bl4_lang','en'); location.replace('/en/builds/'); return; }
+        if (lang === 'zh') { localStorage.setItem('bl4_lang','zh'); location.replace('/builds/'); return; }
         var pref = localStorage.getItem('bl4_lang');
-        if (pref === 'en') { location.replace('/en/'); return; }
-        // default to Chinese homepage -> videos list
-        location.replace('/videos/');
+        if (pref === 'en') { location.replace('/en/builds/'); return; }
+        if (pref === 'zh') { location.replace('/builds/'); return; }
+        // default to English builds page
+        location.replace('/en/builds/');
       }
     } catch (e) {}
   })();
