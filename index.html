@@ -32,11 +32,13 @@
       var p = location.pathname;
       if (p === '/' || p === '/index.html') {
         var params = new URLSearchParams(location.search || '');
-        if (params.get('lang') === 'zh') return;
+        var lang = params.get('lang');
+        if (lang === 'en') { localStorage.setItem('bl4_lang','en'); location.replace('/en/'); return; }
+        if (lang === 'zh') { localStorage.setItem('bl4_lang','zh'); location.replace('/videos/'); return; }
         var pref = localStorage.getItem('bl4_lang');
-        if (pref === 'zh') return;
         if (pref === 'en') { location.replace('/en/'); return; }
-        location.replace('/en/');
+        // default to Chinese homepage -> videos list
+        location.replace('/videos/');
       }
     } catch (e) {}
   })();
