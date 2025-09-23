@@ -1,5 +1,15 @@
 // BL4Builds.net 交互脚本
 
+// Persist language preference if ?lang=xx is present on any page
+(function(){
+  try{
+    var lang = new URLSearchParams(location.search||'').get('lang');
+    if(lang === 'en' || lang === 'zh'){
+      localStorage.setItem('bl4_lang', lang);
+    }
+  }catch(e){}
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     console.log('BL4Builds.net 已加载');
 
