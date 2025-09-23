@@ -45,23 +45,66 @@
 
   var allVideos = [];
 
+  // Lightweight enrichment via YouTube oEmbed (no API key)
+  var YT_CACHE_TTL = 24*60*60*1000; // 24h
+  function getCache(id){
+    try{
+      var raw = localStorage.getItem('yt_oe_'+id);
+      if(!raw) return null;
+      var obj = JSON.parse(raw);
+      if(!obj || !obj.exp || obj.exp < Date.now()) { localStorage.removeItem('yt_oe_'+id); return null; }
+      return obj.data;
+    }catch(e){ return null; }
+  }
+  function setCache(id, data){
+    try{ localStorage.setItem('yt_oe_'+id, JSON.stringify({exp: Date.now()+YT_CACHE_TTL, data: data})); }catch(e){}
+  }
+  function fetchOEmbed(id){
+    var url = 'https://www.youtube.com/oembed?format=json&url='+encodeURIComponent('https://www.youtube.com/watch?v='+id);
+    return fetch(url, {mode:'cors'}).then(function(r){ if(!r.ok) throw new Error('oembed '+r.status); return r.json();})
+      .then(function(j){ return { title: j.title, author: j.author_name, thumbnail: j.thumbnail_url }; });
+  }
+  function enrichOne(v){
+    var id = v && v.id; if(!id) return Promise.resolve();
+    var cached = getCache(id);
+    if(cached){ v._oe = cached; return Promise.resolve(); }
+    return fetchOEmbed(id).then(function(data){ v._oe = data; setCache(id, data); }).catch(function(){ /* ignore */ });
+  }
+  function enrichMany(videos){
+    // limit concurrency
+    var idx = 0, active = 0, max = 6;
+    return new Promise(function(resolve){
+      function next(){
+        if(idx >= videos.length && active===0) return resolve();
+        while(active < max && idx < videos.length){
+          var v = videos[idx++]; active++;
+          enrichOne(v).finally(function(){ active--; if(active===0) apply(); next(); });
+        }
+      }
+      next();
+    });
+  }
+
   function render(list){
     if(!list.length){
       root.innerHTML = '<div class="no-results">'+(isEN?'No videos match current filters.':'没有匹配当前筛选的视频。')+'</div>';
       return;
     }
     var cards = list.map(function(v){
-      var title = v.title || 'BL4 video';
       var id = v.id || '';
-      var thumb = 'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg';
+      var oe = v._oe || {};
+      var titleBase = oe.title || v.title || 'BL4 video';
+      var title = titleBase.length > 120 ? titleBase.slice(0,117)+'...' : titleBase;
+      var thumb = oe.thumbnail || ('https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
       var href = 'https://www.youtube.com/watch?v='+id;
       var isNew = (v && (v.new === true || (function(){
         var d = v.published; if(!d) return false; var dt = new Date(d); if(isNaN(dt)) return false; return (Date.now() - dt.getTime()) <= 2*24*60*60*1000;
       })()));
+      var channel = oe.author || v.channel || '';
       return '<a class="video-thumb" href="'+href+'" target="_blank" rel="noopener" style="position:relative">'
            +   (isNew? '<span class="badge-new" style="position:absolute;top:6px;left:6px;z-index:2;background:#e91e63;color:#fff;border-radius:4px;padding:2px 6px;font-size:12px;line-height:1;">NEW</span>' : '')
-           +   '<img src="'+thumb+'" alt="'+title.replace(/"/g, '&quot;')+'" loading="lazy">'
-           +   '<span class="caption">'+title+'</span>'
+           +   '<img src="'+thumb+'" alt="'+title.replace(/"/g, '&quot;')+'" loading="lazy" decoding="async" width="480" height="270">'
+           +   '<span class="caption">'+title+(channel?'<br><span class="caption-sub" style="opacity:.8;font-size:12px;">'+channel+'</span>':'')+'</span>'
            + '</a>';
     }).join('');
     root.innerHTML = '<div class="tag-videos-grid">'+cards+'</div>';
@@ -89,6 +132,8 @@
       allVideos = Array.isArray(items)? items.slice() : [];
       allVideos.sort(function(a,b){ return String(b.published||'').localeCompare(String(a.published||'')); });
       apply();
+      // Enrich titles/channel/thumbnail via oEmbed in background (no API key)
+      enrichMany(allVideos).catch(function(){ /* ignore */ });
     })
     .catch(function(){
       var countEl = document.getElementById('vf-count');
