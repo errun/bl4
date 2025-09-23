@@ -38,10 +38,8 @@
         var lang = params.get('lang');
         if (lang === 'en') { localStorage.setItem('bl4_lang','en'); location.replace('/en/builds/'); return; }
         if (lang === 'zh') { localStorage.setItem('bl4_lang','zh'); location.replace('/builds/'); return; }
-        var pref = localStorage.getItem('bl4_lang');
-        if (pref === 'en') { location.replace('/en/builds/'); return; }
-        if (pref === 'zh') { location.replace('/builds/'); return; }
-        // default to English builds page
+        // ignore any previous preference; default to English builds
+        localStorage.setItem('bl4_lang','en');
         location.replace('/en/builds/');
       }
     } catch (e) {}
