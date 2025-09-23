@@ -16,6 +16,7 @@
     <link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/">
     <link rel="alternate" hreflang="en" href="https://bl4builds.net/en/">
     <meta property="og:image" content="https://bl4builds.net/assets/img/bl4/hero.jpg">
+    <link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://bl4builds.net/assets/img/bl4/hero.jpg">
 
@@ -36,11 +37,37 @@
       if (p === '/' || p === '/index.html') {
         var params = new URLSearchParams(location.search || '');
         var lang = params.get('lang');
-        if (lang === 'en') { localStorage.setItem('bl4_lang','en'); location.replace('/en/builds/'); return; }
-        if (lang === 'zh') { localStorage.setItem('bl4_lang','zh'); location.replace('/builds/'); return; }
-        // ignore any previous preference; default to English builds
-        localStorage.setItem('bl4_lang','en');
-        location.replace('/en/builds/');
+        function go(l){
+          if(l==='zh') { localStorage.setItem('bl4_lang','zh'); location.replace('/builds/'); return true; }
+          if(l==='en') { localStorage.setItem('bl4_lang','en'); location.replace('/en/builds/'); return true; }
+          if(l==='ja') { localStorage.setItem('bl4_lang','ja'); location.replace('/ja/builds/'); return true; }
+          return false;
+        }
+        // 1) explicit ?lang wins
+        if (go(lang)) return;
+        // 2) stored preference
+        var pref = localStorage.getItem('bl4_lang');
+        if (go(pref)) return;
+        // 3) cached geo choice (7 days)
+        try{
+          var cached = JSON.parse(localStorage.getItem('bl4_geo_lang')||'null');
+          if(cached && cached.exp > Date.now() && go(cached.val)) return;
+        }catch(e){}
+        // 4) GeoIP with timeout (800ms). Map JP->ja, CN/HK/TW->zh, others->en
+        var done = false;
+        function decideByCountry(c){
+          c = String(c||'').toUpperCase();
+          if(c==='JP') return 'ja';
+          if(c==='CN' || c==='HK' || c==='TW') return 'zh';
+          return 'en';
+        }
+        function cacheAndGo(v){ try{ localStorage.setItem('bl4_geo_lang', JSON.stringify({val:v, exp: Date.now()+7*24*60*60*1000})); }catch(e){} go(v); }
+        var t = setTimeout(function(){ if(!done){ done=true; cacheAndGo('en'); } }, 800);
+        fetch('https://ipapi.co/json/', {mode:'cors'}).then(function(r){ return r.ok? r.json(): Promise.reject(); }).then(function(j){
+          if(done) return; done=true; clearTimeout(t);
+          var v = decideByCountry(j && (j.country || j.country_code));
+          cacheAndGo(v);
+        }).catch(function(){ if(!done){ done=true; clearTimeout(t); cacheAndGo('en'); }});
       }
     } catch (e) {}
   })();

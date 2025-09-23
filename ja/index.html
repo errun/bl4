@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BL4Builds.net 日本語 | Borderlands 4 ビルドと動画</title>
+  <meta name="description" content="Borderlands 4（BL4）のビルドと動画を日本語で。レベリング、エンドゲーム、ボス攻略など。" />
+  <link rel="canonical" href="https://bl4builds.net/ja/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/" />
+  <link rel="alternate" hreflang="en" href="https://bl4builds.net/en/" />
+  <link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/" />
+  <link rel="alternate" hreflang="x-default" href="https://bl4builds.net/en/" />
+  <link rel="icon" href="../assets/img/logo-neon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>
+    // Redirect JA root to JA builds
+    (function(){
+      try{
+        var p = location.pathname;
+        if(p === '/ja/' || p === '/ja/index.html'){
+          var params = new URLSearchParams(location.search||'');
+          var lang = params.get('lang');
+          if(lang === 'en'){ localStorage.setItem('bl4_lang','en'); location.replace('/en/builds/'); return; }
+          if(lang === 'zh'){ localStorage.setItem('bl4_lang','zh'); location.replace('/builds/'); return; }
+          localStorage.setItem('bl4_lang','ja');
+          location.replace('/ja/builds/');
+        }
+      }catch(e){}
+    })();
+  </script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-brand"><a class="brand-link" href="./">BL4Builds.net</a></div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="./" class="nav-link active">ホーム</a>
+          <a href="builds/" class="nav-link">ビルド</a>
+          <a href="videos/" class="nav-link">動画</a>
+          <a href="about.html" class="nav-link">このサイトについて</a>
+          <a href="/en/?lang=en" class="nav-link" lang="en">EN</a>
+          <a href="/?lang=zh" class="nav-link" lang="zh-CN">中文</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="page-header">
+      <h1>BL4Builds 日本語</h1>
+      <p>まもなく日本語版ビルド一覧へ自動的に移動します…</p>
+      <p><a href="/ja/builds/">移動しない場合はこちら</a></p>
+    </section>
+  </main>
+
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
+

@@ -4,7 +4,7 @@
 (function(){
   try{
     var lang = new URLSearchParams(location.search||'').get('lang');
-    if(lang === 'en' || lang === 'zh'){
+    if(lang === 'en' || lang === 'zh' || lang === 'ja'){
       localStorage.setItem('bl4_lang', lang);
     }
   }catch(e){}
