@@ -3,16 +3,17 @@
   if(!root) return;
   var filtersWrap = document.getElementById('video-filters');
   var isEN = location.pathname.indexOf('/en/')===0;
+  var isJA = location.pathname.indexOf('/ja/')===0;
 
   var TAGS = [
-    {key:'Endgame', labelEN:'Endgame', labelZH:'终局'},
-    {key:'Leveling', labelEN:'Leveling', labelZH:'升级'},
-    {key:'Boss', labelEN:'Boss', labelZH:'Boss'},
-    {key:'Beginner', labelEN:'Beginner', labelZH:'新手'},
-    {key:'Guide', labelEN:'Guide', labelZH:'攻略'},
-    {key:'Skill Trees', labelEN:'Skill Trees', labelZH:'技能树'},
-    {key:'Vex', labelEN:'Vex', labelZH:'Vex'},
-    {key:'Rafa', labelEN:'Rafa', labelZH:'Rafa'}
+    {key:'Endgame', labelEN:'Endgame', labelZH:'终局', labelJA:'エンドゲーム'},
+    {key:'Leveling', labelEN:'Leveling', labelZH:'升级', labelJA:'レベリング'},
+    {key:'Boss', labelEN:'Boss', labelZH:'Boss', labelJA:'ボス'},
+    {key:'Beginner', labelEN:'Beginner', labelZH:'新手', labelJA:'初心者'},
+    {key:'Guide', labelEN:'Guide', labelZH:'攻略', labelJA:'ガイド'},
+    {key:'Skill Trees', labelEN:'Skill Trees', labelZH:'技能树', labelJA:'スキルツリー'},
+    {key:'Vex', labelEN:'Vex', labelZH:'Vex', labelJA:'Vex'},
+    {key:'Rafa', labelEN:'Rafa', labelZH:'Rafa', labelJA:'Rafa'}
   ];
 
   var selected = new Set();
@@ -20,11 +21,11 @@
   function renderFilters(){
     if(!filtersWrap) return;
     var html = '<div class="filter-actions">'
-      + '<span class="vf-count" id="vf-count">'+(isEN?'Loading...':'加载中...')+'</span>'
+      + '<span class="vf-count" id="vf-count">'+(isEN?'Loading...':(isJA?'読み込み中...':'加载中...'))+'</span>'
       + '</div>'
       + '<div class="filter-tags">'
       + TAGS.map(function(t){
-          var label = isEN? t.labelEN : t.labelZH;
+          var label = isEN? t.labelEN : (isJA? t.labelJA : t.labelZH);
           var id = 'vf_'+t.key.replace(/\s+/g,'_');
           return '<label class="filter-tag" for="'+id+'">'
                +   '<input type="checkbox" id="'+id+'" data-key="'+t.key+'">'
@@ -87,7 +88,7 @@
 
   function render(list){
     if(!list.length){
-      root.innerHTML = '<div class="no-results">'+(isEN?'No videos match current filters.':'没有匹配当前筛选的视频。')+'</div>';
+      root.innerHTML = '<div class="no-results">'+(isEN?'No videos match current filters.':(isJA?'該当する動画はありません。':'没有匹配当前筛选的视频。'))+'</div>';
       return;
     }
     var cards = list.map(function(v){
@@ -122,7 +123,7 @@
       });
     }
     var countEl = document.getElementById('vf-count');
-    if(countEl){ countEl.textContent = (isEN?'Videos: ':'视频：') + list.length; }
+    if(countEl){ countEl.textContent = (isEN?'Videos: ':(isJA?'動画：':'视频：')) + list.length; }
     render(list);
   }
 
@@ -139,7 +140,7 @@
     })
     .catch(function(){
       var countEl = document.getElementById('vf-count');
-      if(countEl){ countEl.textContent = isEN? 'Failed to load videos' : '视频加载失败'; }
+      if(countEl){ countEl.textContent = isEN? 'Failed to load videos' : (isJA? '動画の読み込みに失敗しました' : '视频加载失败'); }
     });
 })();
 
