@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BL4 SHiFT 兑换码 | 自动抓取 | BL4Builds</title>
+  <meta name="description" content="自动从 IGN 页面抓取 Borderlands 4（BL4）SHiFT 兑换码并展示，带复制按钮与本地缓存。" />
+  <link rel="canonical" href="https://bl4builds.net/shift-codes.html" />
+  <link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/shift-codes.html" />
+  <link rel="alternate" hreflang="en" href="https://bl4builds.net/en/shift-codes.html" />
+  <link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/shift-codes.html" />
+  <link rel="alternate" hreflang="x-default" href="https://bl4builds.net/en/shift-codes.html" />
+  <link rel="icon" href="assets/img/logo-neon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://www.ign.com">
+  <link rel="dns-prefetch" href="https://www.ign.com">
+  <link rel="preconnect" href="https://r.jina.ai">
+  <link rel="dns-prefetch" href="https://r.jina.ai">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .sc-list{list-style:none;padding:0;margin:16px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+    .sc-item{display:flex;align-items:center;justify-content:space-between;border:1px solid #333;border-radius:8px;padding:10px;background:#0b0b0b}
+    .sc-code{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;font-size:14px;color:#e0e0e0}
+    .sc-copy{margin-left:10px;background:#1e88e5;color:#fff;border:0;border-radius:6px;padding:6px 10px;cursor:pointer}
+    .sc-head{margin:10px 0 8px}
+    .sc-empty{opacity:.8;margin:12px 0}
+  </style>
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-brand"><a class="brand-link" href="./">BL4Builds.net</a></div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="./" class="nav-link">首页</a>
+        <a href="builds/" class="nav-link">构建指南</a>
+        <a href="videos/" class="nav-link">视频</a>
+        <a href="about.html" class="nav-link">关于</a>
+        <a href="/en/shift-codes.html?lang=en" class="nav-link" lang="en">EN</a>
+        <a href="/ja/shift-codes.html?lang=ja" class="nav-link" lang="ja">日本語</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+    </div>
+  </nav>
+</header>
+
+<main class="main">
+  <div class="container">
+    <div class="page-header">
+      <h1>SHiFT 兑换码</h1>
+      <p>自动抓取并展示，含复制按钮与6小时本地缓存；源站：IGN。</p>
+    </div>
+    <section>
+      <div id="shift-codes"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2025 BL4Builds.net</p></div></div></footer>
+
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/shift-codes.js"></script>
+</body>
+</html>
+
