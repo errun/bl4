@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <!-- Home (zh/en) -->
+    <!-- Home (zh/en/ja) -->
     <url>
         <loc>https://bl4builds.net/</loc>
         <lastmod>2025-09-23</lastmod>
@@ -9,6 +9,7 @@
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/" />
         <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/" />
     </url>
     <url>
         <loc>https://bl4builds.net/en/</loc>
@@ -17,9 +18,19 @@
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/" />
         <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/" />
+    </url>
+    <url>
+        <loc>https://bl4builds.net/ja/</loc>
+        <lastmod>2025-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/" />
     </url>
 
-    <!-- Builds index (zh/en) -->
+    <!-- Builds index (zh/en/ja) -->
     <url>
         <loc>https://bl4builds.net/builds/</loc>
         <lastmod>2025-09-23</lastmod>
@@ -27,6 +38,7 @@
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/" />
         <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/builds/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/builds/" />
     </url>
     <url>
         <loc>https://bl4builds.net/en/builds/</loc>
@@ -35,8 +47,18 @@
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/" />
         <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/builds/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/builds/" />
     </url>
-    <!-- Videos index (zh/en) -->
+    <url>
+        <loc>https://bl4builds.net/ja/builds/</loc>
+        <lastmod>2025-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/builds/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/builds/" />
+    </url>
+    <!-- Videos index (zh/en/ja) -->
     <url>
         <loc>https://bl4builds.net/videos/</loc>
         <lastmod>2025-09-23</lastmod>
@@ -44,6 +66,7 @@
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/videos/" />
         <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/videos/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/videos/" />
     </url>
     <url>
         <loc>https://bl4builds.net/en/videos/</loc>
@@ -52,10 +75,20 @@
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/videos/" />
         <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/videos/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/videos/" />
+    </url>
+    <url>
+        <loc>https://bl4builds.net/ja/videos/</loc>
+        <lastmod>2025-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/videos/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/videos/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/videos/" />
     </url>
 
 
-    <!-- About (zh/en) -->
+    <!-- About (zh/en/ja) -->
     <url>
         <loc>https://bl4builds.net/about.html</loc>
         <lastmod>2025-09-23</lastmod>
@@ -63,6 +96,7 @@
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/about.html" />
         <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/about.html" />
     </url>
     <url>
         <loc>https://bl4builds.net/en/about.html</loc>
@@ -71,6 +105,45 @@
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/about.html" />
         <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/about.html" />
+    </url>
+    <url>
+        <loc>https://bl4builds.net/ja/about.html</loc>
+        <lastmod>2025-09-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/about.html" />
+    </url>
+
+    <!-- SHiFT codes (zh/en/ja) -->
+    <url>
+        <loc>https://bl4builds.net/shift-codes.html</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/shift-codes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/shift-codes.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/shift-codes.html" />
+    </url>
+    <url>
+        <loc>https://bl4builds.net/en/shift-codes.html</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/shift-codes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/shift-codes.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/shift-codes.html" />
+    </url>
+    <url>
+        <loc>https://bl4builds.net/ja/shift-codes.html</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/shift-codes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://bl4builds.net/en/shift-codes.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://bl4builds.net/ja/shift-codes.html" />
     </url>
 
     <!-- Build details (zh/en pairs) -->

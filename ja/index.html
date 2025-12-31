@@ -12,22 +12,6 @@
   <link rel="alternate" hreflang="x-default" href="https://bl4builds.net/en/" />
   <link rel="icon" href="../assets/img/logo-neon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <script>
-    // Redirect JA root to JA builds
-    (function(){
-      try{
-        var p = location.pathname;
-        if(p === '/ja/' || p === '/ja/index.html'){
-          var params = new URLSearchParams(location.search||'');
-          var lang = params.get('lang');
-          if(lang === 'en'){ localStorage.setItem('bl4_lang','en'); location.replace('/en/builds/'); return; }
-          if(lang === 'zh'){ localStorage.setItem('bl4_lang','zh'); location.replace('/builds/'); return; }
-          localStorage.setItem('bl4_lang','ja');
-          location.replace('/ja/builds/');
-        }
-      }catch(e){}
-    })();
-  </script>
 </head>
 <body>
   <header class="header">
@@ -50,12 +34,15 @@
   <main class="main">
     <section class="page-header">
       <h1>BL4Builds 日本語</h1>
-      <p>まもなく日本語版ビルド一覧へ自動的に移動します…</p>
-      <p><a href="/ja/builds/">移動しない場合はこちら</a></p>
+      <p>Borderlands 4（BL4）のビルドと動画を日本語で。</p>
+      <div class="hero-buttons">
+        <a href="/ja/builds/" class="btn btn-primary">ビルドを見る</a>
+        <a href="/ja/videos/" class="btn btn-secondary">動画を見る</a>
+      </div>
+      <p class="seo-inline" style="margin-top:8px;font-size:14px;color:#777">SHiFTコードは <a href="/ja/shift-codes.html">こちら</a></p>
     </section>
   </main>
 
   <script src="../assets/js/site.js"></script>
 </body>
 </html>
-

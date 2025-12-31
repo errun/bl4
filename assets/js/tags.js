@@ -50,6 +50,7 @@
   if(buildsWrap){
     var buildTag = root.getAttribute('data-build-tag') || tag;
     var list = (isEN?buildsMapEN:buildsMapZH)[buildTag] || [];
+    buildsWrap.innerHTML = '';
     if(list.length){
       var ul = h('<ul class="tag-builds-list"></ul>');
       list.forEach(function(b){
@@ -64,11 +65,16 @@
   // Videos list
   var videosWrap = document.getElementById('tag-videos');
   if(videosWrap){
+    var fallbackHtml = (videosWrap.innerHTML || '').trim();
     fetch('/assets/data/videos.json',{cache:'no-store'})
       .then(function(r){return r.json();})
       .then(function(list){
         var items = (list||[]).filter(function(v){ return Array.isArray(v.tags) && v.tags.indexOf(tag)!==-1; });
-        if(!items.length){ videosWrap.innerHTML = '<p class="text-muted">'+(isEN?'No videos for this tag yet.':'暂无该标签的视频。')+'</p>'; return; }
+        if(!items.length){
+          if(fallbackHtml) return;
+          videosWrap.innerHTML = '<p class="text-muted">'+(isEN?'No videos for this tag yet.':'暂无该标签的视频。')+'</p>';
+          return;
+        }
         var html = items.map(function(v){
           var thumb = 'https://i.ytimg.com/vi/'+v.id+'/hqdefault.jpg';
           return '<a class="video-thumb" href="https://www.youtube.com/watch?v='+v.id+'" target="_blank" rel="noopener">'
@@ -78,7 +84,9 @@
         }).join('');
         videosWrap.innerHTML = '<div class="tag-videos-grid">'+html+'</div>';
       })
-      .catch(function(){ videosWrap.innerHTML = '<p class="text-muted">'+(isEN?'Failed to load videos.':'视频加载失败。')+'</p>'; });
+      .catch(function(){
+        if(fallbackHtml) return;
+        videosWrap.innerHTML = '<p class="text-muted">'+(isEN?'Failed to load videos.':'视频加载失败。')+'</p>';
+      });
   }
 })();
-
