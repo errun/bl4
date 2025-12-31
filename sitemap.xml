@@ -4,7 +4,7 @@
     <!-- Home (zh/en/ja) -->
     <url>
         <loc>https://bl4builds.net/</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/" />
@@ -13,7 +13,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/" />
@@ -22,7 +22,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/ja/</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/" />
@@ -33,7 +33,7 @@
     <!-- Builds index (zh/en/ja) -->
     <url>
         <loc>https://bl4builds.net/builds/</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/" />
@@ -42,7 +42,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/builds/</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/builds/" />
@@ -61,7 +61,7 @@
     <!-- Videos index (zh/en/ja) -->
     <url>
         <loc>https://bl4builds.net/videos/</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/videos/" />
@@ -70,7 +70,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/videos/</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/videos/" />
@@ -120,7 +120,7 @@
     <!-- SHiFT codes (zh/en/ja) -->
     <url>
         <loc>https://bl4builds.net/shift-codes.html</loc>
-        <lastmod>2025-09-25</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/shift-codes.html" />
@@ -129,7 +129,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/shift-codes.html</loc>
-        <lastmod>2025-09-25</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/shift-codes.html" />
@@ -138,7 +138,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/ja/shift-codes.html</loc>
-        <lastmod>2025-09-25</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/shift-codes.html" />
@@ -252,7 +252,7 @@
     <!-- Tag landing pages (zh/en pairs) -->
     <url>
         <loc>https://bl4builds.net/tags/endgame.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/endgame.html"/>
@@ -260,7 +260,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/tags/endgame.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/endgame.html"/>
@@ -269,7 +269,7 @@
 
     <url>
         <loc>https://bl4builds.net/tags/leveling.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/leveling.html"/>
@@ -277,7 +277,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/tags/leveling.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/leveling.html"/>
@@ -286,7 +286,7 @@
 
     <url>
         <loc>https://bl4builds.net/tags/boss.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/boss.html"/>
@@ -294,7 +294,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/tags/boss.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/boss.html"/>
@@ -303,7 +303,7 @@
 
     <url>
         <loc>https://bl4builds.net/tags/beginner.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/beginner.html"/>
@@ -311,7 +311,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/tags/beginner.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/beginner.html"/>
@@ -320,7 +320,7 @@
 
     <url>
         <loc>https://bl4builds.net/tags/guide.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/guide.html"/>
@@ -328,7 +328,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/tags/guide.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/guide.html"/>
@@ -337,7 +337,7 @@
 
     <url>
         <loc>https://bl4builds.net/tags/skill-trees.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/skill-trees.html"/>
@@ -345,7 +345,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/tags/skill-trees.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/skill-trees.html"/>
@@ -354,7 +354,7 @@
 
     <url>
         <loc>https://bl4builds.net/tags/vex.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/vex.html"/>
@@ -362,7 +362,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/tags/vex.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/vex.html"/>
@@ -371,7 +371,7 @@
 
     <url>
         <loc>https://bl4builds.net/tags/rafa.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/rafa.html"/>
@@ -379,7 +379,7 @@
     </url>
     <url>
         <loc>https://bl4builds.net/en/tags/rafa.html</loc>
-        <lastmod>2025-09-23</lastmod>
+        <lastmod>2025-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bl4builds.net/tags/rafa.html"/>
