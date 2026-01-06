@@ -11,6 +11,7 @@
   if(!tag) return;
 
   var isEN = location.pathname.indexOf('/en/')===0;
+  var isJA = location.pathname.indexOf('/ja/')===0;
   var buildsMapEN = {
     'Endgame': [
       {href:'/en/builds/zane-endgame-shock-dps.html', title:'Zane Endgame Shock DPS'}
@@ -42,6 +43,15 @@
     '技能树': [ {href:'/builds/fl4k-pet-master.html', title:'FL4K 宠物流（技能概览）'} ],
     'Zane': [ {href:'/builds/zane-endgame-shock-dps.html', title:'Zane 终局电击 DPS'} ]
   };
+  var buildsMapJA = {
+    'Endgame': [ {href:'/ja/builds/zane-endgame-shock-dps.html', title:'Zane エンドゲーム・ショックDPS'} ],
+    'Leveling': [ {href:'/ja/builds/universal-leveling.html', title:'汎用レベリング'} ],
+    'Boss': [ {href:'/ja/builds/moze-solo-boss.html', title:'Moze ソロボス特化'} ],
+    'Beginner': [ {href:'/ja/builds/amara-starter.html', title:'Amara ビギナー向けスターター'} ],
+    'Guide': [ {href:'/ja/builds/team-support.html', title:'チームサポート'} ],
+    'Skill Trees': [ {href:'/ja/builds/fl4k-pet-master.html', title:'FL4K ペットマスター'} ],
+    'Zane': [ {href:'/ja/builds/zane-endgame-shock-dps.html', title:'Zane エンドゲーム・ショックDPS'} ]
+  };
 
   function h(html){ var d=document.createElement('div'); d.innerHTML=html; return d.firstElementChild; }
 
@@ -49,7 +59,8 @@
   var buildsWrap = document.getElementById('tag-builds');
   if(buildsWrap){
     var buildTag = root.getAttribute('data-build-tag') || tag;
-    var list = (isEN?buildsMapEN:buildsMapZH)[buildTag] || [];
+    var map = isEN ? buildsMapEN : (isJA ? buildsMapJA : buildsMapZH);
+    var list = map[buildTag] || [];
     buildsWrap.innerHTML = '';
     if(list.length){
       var ul = h('<ul class="tag-builds-list"></ul>');
@@ -58,7 +69,7 @@
       });
       buildsWrap.appendChild(ul);
     }else{
-      buildsWrap.innerHTML = '<p class="text-muted">'+(isEN?'No in-site builds labeled with this tag yet.':'暂时没有对应标签的构建。')+'</p>';
+      buildsWrap.innerHTML = '<p class="text-muted">'+(isEN?'No in-site builds labeled with this tag yet.':(isJA?'このタグのビルドはまだありません。':'暂时没有对应标签的构建。'))+'</p>';
     }
   }
 
@@ -72,7 +83,7 @@
         var items = (list||[]).filter(function(v){ return Array.isArray(v.tags) && v.tags.indexOf(tag)!==-1; });
         if(!items.length){
           if(fallbackHtml) return;
-          videosWrap.innerHTML = '<p class="text-muted">'+(isEN?'No videos for this tag yet.':'暂无该标签的视频。')+'</p>';
+          videosWrap.innerHTML = '<p class="text-muted">'+(isEN?'No videos for this tag yet.':(isJA?'このタグの動画はまだありません。':'暂无该标签的视频。'))+'</p>';
           return;
         }
         var html = items.map(function(v){
@@ -86,7 +97,7 @@
       })
       .catch(function(){
         if(fallbackHtml) return;
-        videosWrap.innerHTML = '<p class="text-muted">'+(isEN?'Failed to load videos.':'视频加载失败。')+'</p>';
+        videosWrap.innerHTML = '<p class="text-muted">'+(isEN?'Failed to load videos.':(isJA?'動画の読み込みに失敗しました。':'视频加载失败。'))+'</p>';
       });
   }
 })();

@@ -63,14 +63,14 @@
             <p class="seo-inline" style="margin-top:6px;font-size:14px;color:#777">Popular: <a href="/en/tags/vex.html">BL4 Vex builds</a></p>
             <!-- Hot, indexable tag links -->
             <nav class="hot-tags-links" aria-label="Popular tags" style="margin:12px 0 20px; display:flex; flex-wrap:wrap; gap:10px 14px;">
-                <a href="../../tags/endgame.html" class="tag-link">Endgame</a>
-                <a href="../../tags/leveling.html" class="tag-link">Leveling</a>
-                <a href="../../tags/boss.html" class="tag-link">Boss</a>
-                <a href="../../tags/beginner.html" class="tag-link">Beginner</a>
-                <a href="../../tags/guide.html" class="tag-link">Guide</a>
-                <a href="../../tags/skill-trees.html" class="tag-link">Skill Trees</a>
-                <a href="../../tags/vex.html" class="tag-link">Vex</a>
-                <a href="../../tags/rafa.html" class="tag-link">Rafa</a>
+                <a href="../tags/endgame.html" class="tag-link">Endgame</a>
+                <a href="../tags/leveling.html" class="tag-link">Leveling</a>
+                <a href="../tags/boss.html" class="tag-link">Boss</a>
+                <a href="../tags/beginner.html" class="tag-link">Beginner</a>
+                <a href="../tags/guide.html" class="tag-link">Guide</a>
+                <a href="../tags/skill-trees.html" class="tag-link">Skill Trees</a>
+                <a href="../tags/vex.html" class="tag-link">Vex</a>
+                <a href="../tags/rafa.html" class="tag-link">Rafa</a>
             </nav>
 
         <section class="videos-section" aria-labelledby="hot-videos-title">
@@ -166,10 +166,26 @@
 
         </section>
 
+        <div class="filters">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search builds by name or description...">
+                <button type="button" id="search-btn">Search</button>
+            </div>
 
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="zane">Zane</button>
+                <button class="filter-btn" data-filter="moze">Moze</button>
+                <button class="filter-btn" data-filter="amara">Amara</button>
+                <button class="filter-btn" data-filter="fl4k">FL4K</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+        </div>
 
-        <div class="builds-grid">
-            <div class="build-card">
+        <div class="builds-grid" id="builds-grid">
+            <div class="build-card" data-character="zane" data-difficulty="advanced">
                 <div class="build-image">
                     <picture>
                         <source type="image/webp" srcset="../../assets/img/bl4/visual-5.webp" />
@@ -185,7 +201,7 @@
                 </div>
             </div>
 
-            <div class="build-card">
+            <div class="build-card" data-character="moze" data-difficulty="intermediate">
                 <div class="build-image">
                     <picture>
                         <source type="image/webp" srcset="../../assets/img/bl4/visual-1.webp" />
@@ -195,13 +211,13 @@
                 </div>
                 <div class="build-content">
                     <h3 class="build-title">Solo Boss Killer</h3>
-                    <p class="build-description">English version coming soon.</p>
+                    <p class="build-description">Explosive burst damage optimized for boss fights.</p>
                     <div class="build-meta"><span class="difficulty intermediate">Intermediate</span><span class="patch">v1.0</span></div>
                     <a href="moze-solo-boss.html" class="build-link">View Details</a>
                 </div>
             </div>
 
-            <div class="build-card">
+            <div class="build-card" data-character="amara" data-difficulty="beginner">
                 <div class="build-image">
                     <picture>
                         <source type="image/webp" srcset="../../assets/img/bl4/visual-3.webp" />
@@ -211,13 +227,13 @@
                 </div>
                 <div class="build-content">
                     <h3 class="build-title">Beginner Starter</h3>
-                    <p class="build-description">English version coming soon.</p>
+                    <p class="build-description">Easy to learn with strong growth potential for new players.</p>
                     <div class="build-meta"><span class="difficulty beginner">Beginner</span><span class="patch">v1.0</span></div>
                     <a href="amara-starter.html" class="build-link">View Details</a>
                 </div>
             </div>
 
-            <div class="build-card">
+            <div class="build-card" data-character="fl4k" data-difficulty="intermediate">
                 <div class="build-image">
                     <picture>
                         <source type="image/webp" srcset="../../assets/img/bl4/visual-4.webp" />
@@ -227,13 +243,13 @@
                 </div>
                 <div class="build-content">
                     <h3 class="build-title">Pet Master</h3>
-                    <p class="build-description">English version coming soon.</p>
+                    <p class="build-description">Leverages powerful companions and tactical playstyles.</p>
                     <div class="build-meta"><span class="difficulty intermediate">Intermediate</span><span class="patch">v1.0</span></div>
                     <a href="fl4k-pet-master.html" class="build-link">View Details</a>
                 </div>
             </div>
 
-            <div class="build-card">
+            <div class="build-card" data-character="universal" data-difficulty="beginner">
                 <div class="build-image">
                     <picture>
                         <source type="image/webp" srcset="../../assets/img/bl4/visual-7.webp" />
@@ -243,13 +259,13 @@
                 </div>
                 <div class="build-content">
                     <h3 class="build-title">Universal Leveling</h3>
-                    <p class="build-description">English version coming soon.</p>
+                    <p class="build-description">A leveling build that works for every class.</p>
                     <div class="build-meta"><span class="difficulty beginner">Beginner</span><span class="patch">v1.0</span></div>
                     <a href="universal-leveling.html" class="build-link">View Details</a>
                 </div>
             </div>
 
-            <div class="build-card">
+            <div class="build-card" data-character="team" data-difficulty="advanced">
                 <div class="build-image">
                     <picture>
                         <source type="image/webp" srcset="../../assets/img/bl4/visual-8.webp" />
@@ -259,11 +275,16 @@
                 </div>
                 <div class="build-content">
                     <h3 class="build-title">Team Support</h3>
-                    <p class="build-description">English version coming soon.</p>
+                    <p class="build-description">Designed to buff allies and enhance team play.</p>
                     <div class="build-meta"><span class="difficulty advanced">Advanced</span><span class="patch">v1.0</span></div>
                     <a href="team-support.html" class="build-link">View Details</a>
                 </div>
             </div>
+        </div>
+
+        <div class="no-results" id="no-results" style="display: none;">
+            <h3>No matching builds</h3>
+            <p>Try adjusting your search or filters.</p>
         </div>
     </div>
 </main>
@@ -289,9 +310,7 @@
   ]
 }
 </script>
-
-</body>
 <script src="../../assets/js/videos.js"></script>
 
+</body>
 </html>
-

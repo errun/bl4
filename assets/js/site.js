@@ -69,6 +69,14 @@ function initBuildSearch() {
             clearTimeout(this.searchTimeout);
             this.searchTimeout = setTimeout(performSearch, 300);
         });
+
+        // 读取 URL 参数 ?q= 作为初始搜索
+        var params = new URLSearchParams(window.location.search || '');
+        var q = params.get('q');
+        if (q) {
+            searchInput.value = q;
+            performSearch();
+        }
     }
 
     function performSearch() {
@@ -77,9 +85,12 @@ function initBuildSearch() {
         let visibleCount = 0;
 
         buildCards.forEach(card => {
-            const title = card.querySelector('.build-title').textContent.toLowerCase();
-            const description = card.querySelector('.build-description').textContent.toLowerCase();
-            const character = card.querySelector('.character-badge').textContent.toLowerCase();
+            const titleEl = card.querySelector('.build-title');
+            const descriptionEl = card.querySelector('.build-description');
+            const characterEl = card.querySelector('.character-badge');
+            const title = titleEl ? titleEl.textContent.toLowerCase() : '';
+            const description = descriptionEl ? descriptionEl.textContent.toLowerCase() : '';
+            const character = characterEl ? characterEl.textContent.toLowerCase() : (card.getAttribute('data-character') || '').toLowerCase();
 
             const matches = title.includes(query) ||
                           description.includes(query) ||
@@ -98,6 +109,21 @@ function initBuildSearch() {
         if (noResults) {
             noResults.style.display = visibleCount === 0 ? 'block' : 'none';
         }
+
+        updateSearchParam(query);
+    }
+
+    function updateSearchParam(query) {
+        if (!history || !history.replaceState) return;
+        try {
+            var url = new URL(window.location.href);
+            if (query) {
+                url.searchParams.set('q', query);
+            } else {
+                url.searchParams.delete('q');
+            }
+            history.replaceState(null, '', url.toString());
+        } catch (e) {}
     }
 }
 
