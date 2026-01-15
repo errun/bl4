@@ -106,7 +106,7 @@
       var channel = oe.author || v.channel || '';
       return '<a class="video-thumb" href="'+href+'" target="_blank" rel="noopener" style="position:relative">'
            +   (isNew? '<span class="badge-new" style="position:absolute;top:6px;left:6px;z-index:2;background:#e91e63;color:#fff;border-radius:4px;padding:2px 6px;font-size:12px;line-height:1;">NEW</span>' : '')
-           +   '<img src="'+thumb+'" alt="'+title.replace(/"/g, '&quot;')+'" loading="lazy" decoding="async" width="480" height="270" data-step="1" onerror="if(this.dataset.step==='1'){this.src=\''+thumbMQ+'\';this.dataset.step='2';}else if(this.dataset.step==='2'){this.src=\''+thumbD+'\';this.dataset.step='3';}else{this.src='/assets/img/logo-neon.svg';this.onerror=null;}">'
+           +   '<img src="'+thumb+'" alt="'+title.replace(/"/g, '&quot;')+'" loading="lazy" decoding="async" width="480" height="270" data-step="1" onerror="if(this.dataset.step===&quot;1&quot;){this.src=&quot;'+thumbMQ+'&quot;;this.dataset.step=&quot;2&quot;;}else if(this.dataset.step===&quot;2&quot;){this.src=&quot;'+thumbD+'&quot;;this.dataset.step=&quot;3&quot;;}else{this.src=&quot;/assets/img/logo-neon.svg&quot;;this.onerror=null;}">'
            +   '<span class="caption">'+title+(channel?'<br><span class="caption-sub" style="opacity:.8;font-size:12px;">'+channel+'</span>':'')+'</span>'
            + '</a>';
     }).join('');
