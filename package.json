@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sitemap:update": "node scripts/update-sitemap-lastmod.js",
-    "test": "node tests/smoke.test.js"
+    "test": "node tests/smoke.test.js && node tests/version-stamp.test.js",
+    "version:update": "node scripts/update-version-stamp.js"
   },
   "repository": {
     "type": "git",
