@@ -1,11 +1,58 @@
 // BL4Builds.net 交互脚本
 
-// Persist language preference if ?lang=xx is present on any page
+// Default language routing: prefer explicit URL, then stored pref, fallback to English.
 (function(){
+  function getPathLang(pathname){
+    var match = (pathname || '').match(/^\/(en|ja)(?:\/|$)/);
+    return match ? match[1] : null;
+  }
+  function stripLangPrefix(pathname){
+    var stripped = (pathname || '/').replace(/^\/(en|ja|zh)(?=\/|$)/, '');
+    return stripped ? stripped : '/';
+  }
+  function withLangPrefix(lang, stripped){
+    var clean = stripped || '/';
+    if (clean.charAt(0) !== '/') clean = '/' + clean;
+    if (lang === 'en' || lang === 'ja') {
+      return '/' + lang + (clean === '/' ? '/' : clean);
+    }
+    return clean;
+  }
+
   try{
-    var lang = new URLSearchParams(location.search||'').get('lang');
-    if(lang === 'en' || lang === 'zh' || lang === 'ja'){
-      localStorage.setItem('bl4_lang', lang);
+    var url = new URL(location.href);
+    var qsLang = new URLSearchParams(url.search || '').get('lang');
+    var pathLang = getPathLang(url.pathname);
+    var preferred = null;
+
+    if (qsLang === 'en' || qsLang === 'zh' || qsLang === 'ja') {
+      preferred = qsLang;
+      localStorage.setItem('bl4_lang', preferred);
+    } else if (pathLang) {
+      preferred = pathLang;
+      localStorage.setItem('bl4_lang', preferred);
+    } else {
+      preferred = localStorage.getItem('bl4_lang');
+      if (preferred !== 'en' && preferred !== 'zh' && preferred !== 'ja') {
+        preferred = 'en';
+        localStorage.setItem('bl4_lang', preferred);
+      }
+    }
+
+    var targetPath = url.pathname;
+    if (!pathLang || (preferred && pathLang !== preferred)) {
+      targetPath = withLangPrefix(preferred, stripLangPrefix(url.pathname));
+    }
+
+    if (qsLang) {
+      url.searchParams.delete('lang');
+    }
+
+    url.pathname = targetPath;
+    var next = url.pathname + url.search + url.hash;
+    var now = location.pathname + location.search + location.hash;
+    if (next !== now) {
+      location.replace(next);
     }
   }catch(e){}
 })();
